@@ -1,0 +1,42 @@
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 1
+
+
+
+##### File "chip\CR_FOOTR.s" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE CR_FOOTR.S
+     3                          #
+     4                          # Copyright(c) 1999-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          # Crisis module footer.
+    13                          #
+    14                          # Revision History (Started August 9, 1999 by GLP)
+    15                          #
+    16                          # -----------------------------------------------------------------------------
+    17                          
+    18                             .text
+    19                             .align	2
+    20                          
+    21                             .globl _KBC_PAGE
+    22                             .code_label _KBC_OFFSET
+    23                             .globl _Footer
+    24                          
+    25  T00000000               _Footer:
+    26                          
+    27  T00000000  49              .byte 0x49               # Signature byte set to 0x49.
+    28  T00000001  4e              .byte 0x4E               # Signature byte set to 0x4E.
+    29  T00000002  0000            .word _KBC_PAGE          # Base Address Configuration (BACFG) or
+    30                                                      # PAGE Register setting.
+    31  T00000004  00000000        .double _KBC_OFFSET        # 2-byte pointer (code_label)
+    32                                                      # to start of KBC code.
+    33  T00000008  00              .byte 0                  # Reserved.
+    34  T00000009  00              .byte 0                  # Reserved.

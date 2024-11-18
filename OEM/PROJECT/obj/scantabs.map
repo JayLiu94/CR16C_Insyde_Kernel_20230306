@@ -1,0 +1,42 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00000120
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj\SCANTABS.O
+
+.scantabs       0x00000000        0x0
+ *(.data)
+ *(.data_4)
+ *(.data_2)
+ *(.data_1)
+OUTPUT(obj\SCANTABS.X elf32-cr16c)
+
+.text           0x00000000        0x0
+
+.bss            0x00000000        0x0
+
+.debug_abbrev   0x00000000      0x183
+ .debug_abbrev  0x00000000      0x183 obj\SCANTABS.O
+
+.debug_info     0x00000000     0x11a1
+ .debug_info    0x00000000     0x11a1 obj\SCANTABS.O
+
+.debug_line     0x00000000       0x52
+ .debug_line    0x00000000       0x52 obj\SCANTABS.O
+
+.rdata_2        0x00000052      0x112
+ .rdata_2       0x00000052      0x112 obj\SCANTABS.O
+                0x00000052                Rc_ROM_Tables
+
+.debug_pubnames
+                0x00000000       0x24
+ .debug_pubnames
+                0x00000000       0x24 obj\SCANTABS.O
+
+.debug_str      0x00000000       0x2c
+ .debug_str     0x00000000       0x2c obj\SCANTABS.O

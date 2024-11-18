@@ -1,0 +1,3 @@
+ 
+-I.\ -ICHIP\INC -ICORE\INC -IOEM\PROJECT\INC -IOEM\PROJECT\CHIP\INC -mcr16cplus -ffixed-r13
+-Wimplicit -Os -g -c 

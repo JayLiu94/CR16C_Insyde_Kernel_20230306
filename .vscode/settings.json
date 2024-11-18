@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "OEMMAIN.C": "cpp",
+        "CR_UART.C": "cpp",
+        "SMB_TRAN.C": "cpp",
+        "OEMINI.C": "cpp",
+        "PWRSEQ.C": "cpp",
+        "I2C.C": "cpp",
+        "CLOCK.C": "cpp",
+        "PROC.C": "cpp",
+        "REG68Ax.C": "cpp"
+    }
+}

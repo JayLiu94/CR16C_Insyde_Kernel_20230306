@@ -1,0 +1,90 @@
+/* ---------------------------------------------------------------
+ * MODULE LINKADB3.DEF
+ *
+ *          Copyright 1996-2010, all rights reserved
+ *          Insyde Software Corp.
+ *
+ * Linker directive file for second application development board.
+ *
+ * Revision History (Started May 20, 1997 by GLP)
+ *
+ * GLP
+ * 29 Jun 98   Changed the interrupt stack size from
+ *             0x0100 to 0x0050.
+ * 26 Aug 98   Changed the interrupt stack size from
+ *             0x0050 to 0x0018.
+ *             Changed the stack size from
+ *             0x0100 to 0x0070.
+ * 21 Sep 98   Added sb section.
+ * 19 Aug 99   Updated copyright.
+ * Mark
+ * 2005/12/13  changed ram size (2000 ==> 800) for WPC8768/9L
+ * --------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+ *          WARNING         WARNING         WARNING
+ * "tmon_data" and "tmon_code" are factory addresses.  The Rom
+ * Based Monitor resides in these addresses DO NOT CHANGE THEM.
+ * --------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------
+   The MEMORY statement and the beginning of the
+   SECTIONS statement are setup in the OEMBLD.MAK file.
+
+ * --------------------------------------------------------------- */
+
+   /* The .bss section is for the non-initialized data. */
+   .bss (NOLOAD) :
+      {__BSS_START = .; *(.bss) *(.bss_4) *(.bss_2) *(.bss_1) __BSS_END = .; } >ram
+
+   .common :{*(COMMON)} > ram
+
+   /* The .sb section is for the Static-Base
+      relative (sbrel) access mode optimization. */
+   .sb :{*(.sb_1) *(.sb_2)} >ram
+
+   /* The heap and stack space. */
+   /* The heap takes up 1024 - (data area + bss area + sb area + stack + istack). */
+   .heap :
+      {. += (_CR_RAM_SIZE - (SIZEOF(.data) + SIZEOF(.bss) + SIZEOF(.common) + SIZEOF(.sb) + 0x100 + 0x60 + 0x10));} >ram
+
+   .stack ALIGN(2):
+      {. += 0x0100;} >ram
+
+   /* The .istack section is used for the interrupt stack. */
+   .istack ALIGN(2) :
+      {. += 0x050;} >ram
+   .cr_data ALIGN(2):
+      {. += 0x10;} >ram
+}
+
+/* The following are vector(s) into the Boot ROM code.  The addresses
+   of these vectors grow downward in memory.  The address of each
+   added vector is 2 bytes lower than the previous. */
+_Do_Crisis_Vect = 0x1000;
+/* _Next_Crisis_Vect = _Do_Crisis_Vect - 2; This is for the next vector. */
+
+__STATIC_BASE_START = ADDR(.sb);
+
+__STACK_SIZE = SIZEOF(.stack);
+__STACK_START =  ADDR(.stack) + __STACK_SIZE;
+__ISTACK_START = ADDR(.istack) + SIZEOF(.istack);
+__CR_DATA = ADDR(.cr_data);
+__HEAP_START = ADDR(.heap);
+__HEAP_MAX = ADDR(.heap) + SIZEOF(.heap);
+_HEAP$_START = ADDR(.heap);
+
+
+_RAM_TEST_START = ADDR(.data);
+_RAM_TEST_END = ADDR(.stack) - 1;
+
+__ROM_BEGIN = ADDR(.begin);
+_ROM_SIZE = (ADDR(.end)+SIZEOF(.end)) - ADDR(.begin);
+_GAP = (0x100 - (_ROM_SIZE & 0xFF)) & 0xFF;
+_ROM_SIZE_CODE = (_ROM_SIZE + _GAP) / 256;
+/* T002 << Edward 07/21/2007 Added for storing debug information. */
+_DBG = 0x17A00;
+/* T002 >> Edward 07/21/2007 Added. */
+
+_write_command_buffer = 0x18000 - 16;
+

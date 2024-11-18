@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="nuvoton.debug.launch.ui.CR16ConfigurationTabGroup">
+    <stringAttribute key="nuvoton.debug.core.CR16C System.chipName" value="NPCE68AP"/>
+    <stringAttribute key="nuvoton.debug.core.CR16C System.flash" value="Winbond_W25Q20CL"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.flashErase" value="true"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.flashEraseChip" value="false"/>
+    <intAttribute key="nuvoton.debug.core.CR16C System.flashShared" value="4"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.flashVerify" value="true"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.flashVerifyFull" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.go" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.goNoReset" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.CR16C System.memoryMap" value="Chip ROM;ROM;0;10000;&#10;Core RAM;RAM;10000;20000;&#10;SPI Flash;FLASH;20000;800000;&#10;On-Chip Module Registers;REGS;ff0000;10000;&#10;"/>
+    <booleanAttribute key="nuvoton.debug.core.CR16C System.noReset" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.HWReset" value="true"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.breakpointClean" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.breakpointHardware" value="true"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.cacheEnable" value="true"/>
+    <intAttribute key="nuvoton.debug.core.Debugger.cacheOpDefault" value="0"/>
+    <intAttribute key="nuvoton.debug.core.Debugger.cacheOpFlash" value="1"/>
+    <intAttribute key="nuvoton.debug.core.Debugger.cacheOpRam" value="1"/>
+    <intAttribute key="nuvoton.debug.core.Debugger.cacheOpRegs" value="0"/>
+    <intAttribute key="nuvoton.debug.core.Debugger.cacheOpRom" value="2"/>
+    <stringAttribute key="nuvoton.debug.core.Debugger.ipAddr" value="localhost"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.loggingOutputCRGDB" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.loggingOutputMI" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.loggingOutputPLUGIN" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.Debugger.portNum" value="7070"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.remoteMode" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.verboseAll" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.verboseGDB" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.verboseLogic" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Debugger.verboseSDI" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.PortNumber.Manual" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.delay" value="false"/>
+    <intAttribute key="nuvoton.debug.core.Startup Sequence.delayVal" value="100"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.flashImage" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.Startup Sequence.initCmds" value=""/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.memoryImage" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.memoryImageReset" value="false"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.reset" value="true"/>
+    <stringAttribute key="nuvoton.debug.core.Startup Sequence.runCmds" value=""/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.setBreak" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.Startup Sequence.setBreakAddr" value="main"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.setPC" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.Startup Sequence.setPCAddr" value="0"/>
+    <booleanAttribute key="nuvoton.debug.core.Startup Sequence.setResume" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.initValue.Address" value=""/>
+    <stringAttribute key="nuvoton.debug.core.initValue.Register" value=""/>
+    <booleanAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageFileCustom" value="true"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageFileName" value=""/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageFileName0" value="\OEM\PROJECT\obj\NPCE68Ax.ROM"/>
+    <intAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageFileNumber" value="1"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageOffset0" value="0"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.flashImageType0" value="BIN"/>
+    <booleanAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.loadSymbols" value="true"/>
+    <booleanAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.memoryImageFileCustom" value="false"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.memoryImageFileName" value=""/>
+    <intAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.memoryImageFileNumber" value="0"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.symbolsImageFileName0" value="\OEM\PROJECT\obj\EC68Ax.x"/>
+    <intAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.symbolsImageFileNumber" value="1"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.symbolsOffset" value="0"/>
+    <stringAttribute key="nuvoton.debug.core.org.eclipse.cdt.cdi.launch.mainTab.symbolsOffset0" value="0"/>
+    <booleanAttribute key="nuvoton.debug.cr16.usb2jtag3.enableThreadAwarenessFreeRTOS" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="CR16C Usb2Jtag3"/>
+    <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForImage" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForSymbols" value="true"/>
+    <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useRemoteTarget" value="true"/>
+    <stringAttribute key="org.eclipse.cdt.debug.mi.core.DEBUG_NAME" value="/C:/Nuvoton Technology Corporation/CR Eclipse/gdb/crgdb.exe"/>
+    <booleanAttribute key="org.eclipse.cdt.debug.mi.core.GDB_INIT" value="false"/>
+    <booleanAttribute key="org.eclipse.cdt.debug.mi.core.verboseMode" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+    <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="false"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+    <stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList/&gt;"/>
+    <stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+    <stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="\OEM\PROJECT\obj\EC68Ax.x"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="ECFW_2011_UART"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="org.eclipse.cdt.core.default.config.164169434"/>
+    <booleanAttribute key="org.eclipse.cdt.launch.use_terminal" value="true"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/ECFW_2011_UART"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;/&gt;&#13;&#10;"/>
+    <stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+</launchConfiguration>
