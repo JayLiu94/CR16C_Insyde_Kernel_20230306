@@ -177,6 +177,10 @@ void Service_OEM_1000mS(void)
 
 #endif // PECI_SUPPORTED
 
+    DEBUG_PRINTF("%s:START", __func__);
+    SMB_wrWORD(SMB1, 0x2A, 0x83, 0, 0 ); //  Slave address: 0x15 
+    DEBUG_PRINTF("%s:END", __func__);
+
 }
 
 /* ---------------------------------------------------------------
