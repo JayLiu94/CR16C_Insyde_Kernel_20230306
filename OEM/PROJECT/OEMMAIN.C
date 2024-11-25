@@ -171,6 +171,7 @@ void Service_OEM_500mS(void)
 void Service_OEM_1000mS(void)
 {
     BYTE i;
+    bool status=0;
 #if PECI_SUPPORTED
 
     PECI_GetTemp();
@@ -178,7 +179,15 @@ void Service_OEM_1000mS(void)
 #endif // PECI_SUPPORTED
 
     DEBUG_PRINTF("%s:START", __func__);
-    SMB_wrWORD(SMB1, 0x2A, 0x83, 0, 0 ); //  Slave address: 0x15 
+    //NM1244D slave addr : 15h
+    //SMB_wrWORD(SMB1, SLAVE_ADDR(0x15), T2B_CMD_LED_CONTROL, FN_KEY_LED_BIT, 0 ); 
+    status=Read_Port_Pin(0x00);
+    if(status) //GPIO00
+    {
+        SMB_wrWORD(SMB1, SLAVE_ADDR(0x15), T2B_CMD_KBD_LIGHT_ACTIVITY, 0x00, 0 );
+    }
+    
+
     DEBUG_PRINTF("%s:END", __func__);
 
 }

@@ -50,6 +50,28 @@ extern const BYTE *Ext_Hotkey_Pntr;
 #define Disable_Any_Key_Irq() ICU_Disable_Irq(ICU_EINT_KBD_SCAN)
 
 
+#define SLAVE_ADDR(addr)    ((addr) << 1)
+#define CAPS_LOCK_LED_BIT   (1<<0)
+#define NUM_LOCK_LED_BIT    (1<<1)
+#define FN_KEY_LED_BIT      (1<<9) 
+
+typedef enum
+{
+   kbs_1s = 0x01,
+   kbs_3s = 0x02,
+   kbs_5s = 0x04
+
+}timeouts;
+
+
+typedef enum 
+{
+    T2B_CMD_LED_CONTROL             = 0x83,
+
+    T2B_CMD_KBD_LIGHT_ACTIVITY      = 0x8C  // Indicate base to refresh keyboard backlight
+                                             // state because of fresh keyboard activity       
+}T2B_Commands;
+
 
 #endif /* ifndef SCAN_H */
 
