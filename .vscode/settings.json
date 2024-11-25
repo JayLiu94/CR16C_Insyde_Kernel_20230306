@@ -8,6 +8,11 @@
         "I2C.C": "cpp",
         "CLOCK.C": "cpp",
         "PROC.C": "cpp",
-        "REG68Ax.C": "cpp"
+        "REG68Ax.C": "cpp",
+        "TIMERS.C": "cpp",
+        "PURINI.C": "cpp",
+        "PURFUNCT.C": "cpp",
+        "PURMAIN.C": "cpp",
+        "HID_I2C.C": "cpp"
     }
 }
