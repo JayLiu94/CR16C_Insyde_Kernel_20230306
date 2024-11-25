@@ -1,0 +1,1701 @@
+Archive member included because of file (symbol)
+
+obj\libcore.a(PURMAIN.O)      obj\OEM.O (main)
+obj\libcore.a(PURINI.O)       obj\libcore.a(PURMAIN.O) (Reset_Initialization)
+obj\libcore.a(PURDAT.O)       obj\HOST_IF.O (Flag)
+obj\libcore.a(PURCMD.O)       obj\libcore.a(PURMAIN.O) (Srvc_Pccmd)
+obj\libcore.a(PURSCN.O)       obj\PURXLT.O (bfn_matrix)
+obj\libcore.a(PURDEV.O)       obj\libcore.a(PURINI.O) (Lock_Line)
+obj\libcore.a(PUREXT.O)       obj\libcore.a(PURCMD.O) (Ext_Dat0)
+obj\libcore.a(PURACPI.O)      obj\libcore.a(PURINI.O) (ACPI_Init)
+obj\libcore.a(PURFUNCT.O)     obj\PURXLT.O (System_Control_Function)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+                              obj\SENSRHUB.O (atanf)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(mulsi3.o)
+                              obj\PWM.O (__mulsi3)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+                              obj\PWM.O (sqrt)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+                              obj\CR_UART.O (strcmp)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+                              obj\I2C.O (__udivsi3)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+                              obj\CR_UART.O (_fast_uquo)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+                              obj\CR_UART.O (_fast_urem)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o) (_FAtan)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o) (_FDscale)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o) (_FDtest)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o) (_FDunscale)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o) (_Feraise)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o) (_FInf)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o) (_Errno)
+C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o) (_FDnorm)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+                              obj\PWM.O (__floatsisf)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+                              obj\PWM.O (__fixunssfsi)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+                              obj\PWM.O (__addsf3)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o) (__negsf2)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o) (__subsf3)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+                              obj\SENSRHUB.O (__mulsf3)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+                              obj\SENSRHUB.O (__divsf3)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o) (__gtsf2)
+C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+                              C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o) (__ltsf2)
+
+Allocating common symbols
+Common symbol       size              file
+
+argv                0x14              obj\CR_UART.O
+OOB_Wdat_buf        0x50              obj\ESPI.O
+Hif_Var             0x3c              obj\libcore.a(PURDAT.O)
+PCH_Temp            0xc               obj\ESPI.O
+FLASH_Data          0x40              obj\ESPI.O
+SHM_callback        0x4               obj\shm.o
+FLASH_UPDATE_erase_address
+                    0x4               obj\fu_init.o
+FLASH_device_size   0x4               obj\fu_init.o
+BOOT_BLOCK_routine  0x4               obj\fu_init.o
+FLASH_UPDATE_address
+                    0x4               obj\fu_init.o
+acpi_service_pntr   0x4               obj\libcore.a(PURACPI.O)
+Scanner_Table_Pntr  0x4               obj\libcore.a(PURSCN.O)
+PS_Ticker           0x4               obj\OEMDAT.O
+I2c_Var             0x1c0             obj\I2C.O
+RTC_Data            0x10              obj\ESPI.O
+RxBuff              0x40              obj\CR_UART.O
+EventBounce         0xe               obj\EVENTS.O
+AD_Value            0xe               obj\libcore.a(PURDAT.O)
+time_minus_overhead
+                    0x2               obj\TIMERS.O
+Angle_P             0x2               obj\SENSRHUB.O
+i2c_done            0x4               obj\SMB_TRAN.O
+Service             0x2               obj\libcore.a(PURDAT.O)
+new_keyl            0x10              obj\libcore.a(PURSCN.O)
+Hidi2c_Slave_InputReportBuf
+                    0x2c              obj\HID_I2C.O
+Pass_Buff           0x8               obj\libcore.a(PURDAT.O)
+SCI_Event_Buffer    0x4               obj\libcore.a(PURDAT.O)
+bfn_matrix          0x10              obj\libcore.a(PURSCN.O)
+SMB_Status          0x4               obj\libcore.a(PURDAT.O)
+bscan_matrix        0x10              obj\libcore.a(PURSCN.O)
+input               0x8               obj\libcore.a(PURFUNCT.O)
+new_keyh            0x10              obj\libcore.a(PURSCN.O)
+Hidi2c_Slave_Buf    0x40              obj\HID_I2C.O
+Timed_Function      0x14              obj\libcore.a(PURFUNCT.O)
+Scanner_Strobe_Delay
+                    0x2               obj\libcore.a(PURDAT.O)
+TxBuff              0x100             obj\CR_UART.O
+ok                  0x4               obj\SMB_TRAN.O
+SMB_Buffer          0x94              obj\libcore.a(PURDAT.O)
+Int_Mouse           0x2               obj\libcore.a(PURDAT.O)
+kBuffer             0xc               obj\HID.O
+SMI_Event_Buffer    0x4               obj\libcore.a(PURDAT.O)
+Angle_B             0x2               obj\SENSRHUB.O
+HIF_Response        0x4               obj\libcore.a(PURDAT.O)
+millisecond_timer   0x2               obj\libcore.a(PURFUNCT.O)
+protocol            0x4               obj\SMB_TRAN.O
+PreEventState       0x2               obj\EVENTS.O
+bFnKeyHold          0x2               obj\HID.O
+GS_rData            0xc               obj\SENSRHUB.O
+bKEY_BUFF           0x10              obj\libcore.a(PURSCN.O)
+us_overhead         0x2               obj\TIMERS.O
+Cause_Flags         0x4               obj\libcore.a(PURDAT.O)
+MAFSRdCount         0x2               obj\ESPI.O
+Mouse_State         0x4               obj\libcore.a(PURDAT.O)
+FLASH_UPDATE_burst_active
+                    0x2               obj\fu_init.o
+Angle_PB            0x2               obj\SENSRHUB.O
+EC_Space            0x30              obj\libcore.a(PURDAT.O)
+Hidi2c_Slave_State  0x1               obj\HID_I2C.O
+Timer_A             0x1               obj\libcore.a(PURDAT.O)
+DIDLE_Delay         0x1               obj\libcore.a(PURDAT.O)
+Gen_Info            0x1               obj\libcore.a(PURDAT.O)
+SMI_Event_In_Index  0x1               obj\libcore.a(PURDAT.O)
+Pulse_Width         0x1               obj\libcore.a(PURFUNCT.O)
+Timer_A5            0x1               obj\libcore.a(PURDAT.O)
+Hidi2c_RID2_FeatureReport
+                    0x2b              obj\SENSRHUB.O
+Report_ID           0x1               obj\HID.O
+Tx_Index_IN         0x1               obj\CR_UART.O
+Keypro_Stat         0x1               obj\libcore.a(PURDAT.O)
+Flag                0x2               obj\libcore.a(PURDAT.O)
+Pass_Buff_Idx       0x1               obj\libcore.a(PURDAT.O)
+Wakeup5             0x1               obj\libcore.a(PURDAT.O)
+Fn_Make_Key1        0x1               obj\libcore.a(PURDAT.O)
+scan                0x3               obj\libcore.a(PURSCN.O)
+Hidi2c_RID2_InputReport
+                    0xf               obj\SENSRHUB.O
+SysState            0x1               obj\OEMDAT.O
+Pass_On             0x1               obj\libcore.a(PURDAT.O)
+SHM_RC_STATUS       0x1               obj\libcore.a(PURDAT.O)
+Int_Var             0x2               obj\libcore.a(PURDAT.O)
+Gen_Timer           0x1               obj\libcore.a(PURDAT.O)
+SCI_Event_In_Index  0x1               obj\libcore.a(PURDAT.O)
+Rx_Index            0x1               obj\CR_UART.O
+ACPI_Timer          0x1               obj\libcore.a(PURACPI.O)
+Wakeup1             0x1               obj\libcore.a(PURDAT.O)
+Aux_Data            0x1               obj\libcore.a(PURDAT.O)
+Sensor_num          0x1               obj\SENSRHUB.O
+Wakeup4             0x1               obj\libcore.a(PURDAT.O)
+smi_timer           0x1               obj\libcore.a(PURFUNCT.O)
+bTMrepeat           0x1               obj\libcore.a(PURSCN.O)
+Timer_A4            0x1               obj\libcore.a(PURDAT.O)
+Ext_Cb0             0x1               obj\libcore.a(PURDAT.O)
+Led_Ctrl            0x1               obj\libcore.a(PURDAT.O)
+Hidi2c_ReportType   0x1               obj\HID_I2C.O
+Ext_Cb2             0x1               obj\libcore.a(PURDAT.O)
+SHM_RC_VALUE        0x1               obj\libcore.a(PURDAT.O)
+last_key            0x1               obj\libcore.a(PURSCN.O)
+Aux_Port1           0x7               obj\libcore.a(PURDAT.O)
+OOB_INDX            0x1               obj\ESPI.O
+Hidi2c_RID1_InputReport
+                    0xa               obj\SENSRHUB.O
+PwrState            0x1               obj\OEMDAT.O
+ConfigHostModule    0x1               obj\OEMDAT.O
+ports_enabled       0x1               obj\PS2.O
+Timer_B             0x1               obj\libcore.a(PURDAT.O)
+Ps2_Ctrl            0x1               obj\libcore.a(PURDAT.O)
+Pass_Make1          0x1               obj\libcore.a(PURDAT.O)
+Ccb42               0x1               obj\libcore.a(PURDAT.O)
+Comb_State          0x1               obj\HID.O
+GS_report_EN        0x1               obj\HID_I2C.O
+Scanner_State       0x1               obj\libcore.a(PURDAT.O)
+Tx_Index_OUT        0x1               obj\CR_UART.O
+temp_scanner_state  0x1               obj\PURXLT.O
+FLASH_UPDATE_active
+                    0x1               obj\fu_init.o
+bTMcount            0x1               obj\libcore.a(PURSCN.O)
+Led_Data            0x1               obj\libcore.a(PURDAT.O)
+HIF2_Out_Data_Buffer
+                    0x1               obj\libcore.a(PURDAT.O)
+acpi_selector       0x1               obj\libcore.a(PURACPI.O)
+Wakeup2             0x1               obj\libcore.a(PURDAT.O)
+MULPX               0x1               obj\libcore.a(PURDAT.O)
+Mouse_Cmd           0x1               obj\libcore.a(PURDAT.O)
+SMI_Event_Out_Index
+                    0x1               obj\libcore.a(PURDAT.O)
+Timer_A3            0x1               obj\libcore.a(PURDAT.O)
+Hidi2c_Slave_InputReportBufIdx
+                    0x1               obj\HID_I2C.O
+Hidi2c_ReportID     0x1               obj\HID_I2C.O
+KBD_Retry           0x1               obj\HID.O
+Pass_Make2          0x1               obj\libcore.a(PURDAT.O)
+Save_Kbd_State      0x1               obj\libcore.a(PURDAT.O)
+Save_Typematic      0x1               obj\libcore.a(PURDAT.O)
+typematic           0x1               obj\libcore.a(PURSCN.O)
+Pass_Off            0x1               obj\libcore.a(PURDAT.O)
+Aux_Port_Ticker     0x1               obj\libcore.a(PURDAT.O)
+Aux_Status          0x1               obj\libcore.a(PURDAT.O)
+Hidi2c_RID1_FeatureReport
+                    0x13              obj\SENSRHUB.O
+diode_key           0x1               obj\libcore.a(PURSCN.O)
+SMBCtrl             0x1               obj\OEMDAT.O
+Wakeup3             0x1               obj\libcore.a(PURDAT.O)
+EC_Addr             0x1               obj\libcore.a(PURDAT.O)
+SCI_Event_Out_Index
+                    0x1               obj\libcore.a(PURDAT.O)
+bTMdelay            0x1               obj\libcore.a(PURSCN.O)
+Expect_Count        0x1               obj\libcore.a(PURDAT.O)
+Ext_Cb3             0x1               obj\libcore.a(PURDAT.O)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00020100         0x0001ff00         xr
+rom_sig          0x00020000         0x00000100         xr
+ram              0x00010000         0x00007900         w
+top_ram          0x00017900         0x000004dc         w
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD obj\HEADER.O
+LOAD obj\RESET.O
+LOAD obj\PS2.O
+LOAD obj\HOST_IF.O
+LOAD obj\ICU.O
+LOAD obj\HOOK.O
+LOAD obj\SMB_TRAN.O
+LOAD obj\OEMDAT.O
+LOAD obj\OEMINI.O
+LOAD obj\OEMMAIN.O
+LOAD obj\OEMCMDS.O
+LOAD obj\OEMPECI.O
+LOAD obj\HCONFIG.O
+LOAD obj\EVENTS.O
+LOAD obj\PWRSEQ.O
+LOAD obj\A_TO_D.O
+LOAD obj\D_TO_A.O
+LOAD obj\DEV.O
+LOAD obj\SCAN.O
+LOAD obj\PROC.O
+LOAD obj\I2C.O
+LOAD obj\ESPI.O
+LOAD obj\PURXLT.O
+LOAD obj\OEM.O
+LOAD obj\IRQ.O
+LOAD obj\CLOCK.O
+LOAD obj\TIMERS.O
+LOAD obj\SIB.O
+LOAD obj\PWM.O
+LOAD obj\PORT80.O
+LOAD obj\PECI.O
+LOAD obj\CR_UART.O
+LOAD obj\HID.O
+LOAD obj\PURPM.O
+LOAD obj\HID_I2C.O
+LOAD obj\SENSRHUB.O
+LOAD obj\REG68Ax.O
+LOAD obj\fu_init.o
+LOAD obj\fu_hndl.o
+LOAD obj\fu_ram.o
+LOAD obj\fu_utils.o
+LOAD obj\shm.o
+LOAD obj\libcore.a
+LOAD C:\PROGRA~2\CR164.1/lib16c_O\libstart.a
+LOAD C:\PROGRA~2\CR164.1/lib16c_O\libc.a
+LOAD C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a
+
+.khdr
+
+.header         0x00020000       0x4c
+ *(.header_4)
+ .header_4      0x00020000       0x4c obj\HEADER.O
+                0x00020000                flash_header
+ *(.header_2)
+ *(.header_1)
+ *(.header)
+
+.begin          0x00020100       0x84
+ obj\RESET.O(.text)
+ .text          0x00020100       0x84 obj\RESET.O
+                0x00020102                jbb_entry_point
+                0x00020142                _eop
+                0x00020100                start
+
+.fwu_ram_flash  0x00017900      0x448 load address 0x00020184
+                0x00017900                __FWU_START = .
+ obj\fu_ram.o(.text)
+ .text          0x00017900      0x2be obj\fu_ram.o
+                0x0001795c                FLASH_UPDATE_handle_command
+                0x00017932                FLASH_UPDATE_read
+                0x00017900                _FLASH_UPDATE_handle
+ obj\fu_utils.o(.text)
+ .text          0x00017bbe      0x18a obj\fu_utils.o
+                0x00017bfc                set_address
+                0x00017c72                FLASH_burst_write
+                0x00017c16                FLASH_erase
+                0x00017bbe                Execute_SPI_Command
+                0x00017c60                FLASH_complete_burst_write
+                0x00017c38                FLASH_initiate_burst_write
+                0x00017d1a                FLASH_write_status_reg
+                0x00017bd0                wait_flash_ready
+                0x00017bea                flash_write_enable
+                0x00017c94                FLASH_write_bytes
+                0x00017cd6                FLASH_read_ids
+                0x00017d48                __FWU_END = .
+
+.fwu_common     0x00017d48       0x18
+ obj\fu_init.o(.bss_4)
+ obj\fu_init.o(.bss_2)
+ obj\fu_init.o(.bss_1)
+ obj\fu_init.o(.bss)
+ obj\fu_init.o(COMMON)
+ COMMON         0x00017d48       0x13 obj\fu_init.o
+                                  0x0 (size before relaxing)
+                0x00017d48                FLASH_UPDATE_erase_address
+                0x00017d5a                FLASH_UPDATE_active
+                0x00017d4c                FLASH_device_size
+                0x00017d50                BOOT_BLOCK_routine
+                0x00017d54                FLASH_UPDATE_address
+                0x00017d58                FLASH_UPDATE_burst_active
+ obj\fu_ram.o(.bss_4)
+ obj\fu_ram.o(.bss_2)
+ obj\fu_ram.o(.bss_1)
+ obj\fu_ram.o(.bss)
+ *fill*         0x00017d5b        0x1
+ obj\fu_ram.o(COMMON)
+ obj\fu_utils.o(.bss_4)
+ obj\fu_utils.o(.bss_2)
+ obj\fu_utils.o(.bss_1)
+ obj\fu_utils.o(.bss)
+ obj\fu_utils.o(COMMON)
+ obj\shm.o(.bss_4)
+ obj\shm.o(.bss_2)
+ obj\shm.o(.bss_1)
+ obj\shm.o(.bss)
+ obj\shm.o(COMMON)
+ COMMON         0x00017d5c        0x4 obj\shm.o
+                                  0x0 (size before relaxing)
+                0x00017d5c                SHM_callback
+
+.text           0x000205cc     0xa306
+ *(.text)
+ .text          0x000205cc       0x86 obj\PS2.O
+                0x000205cc                Ps2_Init
+                0x00020630                Serial_Irq_Is_Enabled
+                0x000205f2                Enable_Serial_Irq
+                0x00020608                Disable_Serial_Irq
+                0x00020642                Parity_Is_Ok
+ .text          0x00020652      0x1e8 obj\HOST_IF.O
+                0x00020652                Data_To_Host
+                0x00020718                Aux_Data_To_Host
+                0x00020780                Aux_Error_To_Host
+                0x000206aa                Error_To_Host
+                0x00020822                Host_If_Init
+ .text          0x0002083a      0x286 obj\ICU.O
+                0x00020a04                ps2_sm_handler
+                0x00020854                Flag_handler
+                0x00020858                Trc_handler
+                0x00020a2c                ext_gpio44_handler
+                0x0002092e                ext_gpio3_handler
+                0x000209ac                access_bus4_handler
+                0x0002085e                miwu2_handler
+                0x0002083a                nmi_handler
+                0x00020844                Dvz_handler
+                0x0002097c                access_bus1_handler
+                0x0002093a                mft162_handler
+                0x000209f8                ext_gpio5_handler
+                0x0002098c                access_bus2_handler
+                0x00020842                Svc_handler
+                0x00020856                Bpt_handler
+                0x000209bc                adc_handler
+                0x0002099c                access_bus3_handler
+                0x0002085c                Iad_handler
+                0x00020840                null_handler
+                0x0002095a                ITIM82_handler
+                0x000209ec                ext_gpio4_handler
+                0x00020a32                ext_gpio46_handler
+                0x00020a26                ext_gpio1_handler
+                0x000208d8                miwu3_handler
+                0x0002085a                Und_handler
+                0x000209ca                CR_UART_handler
+                0x00020a3e                Icu_Init
+ .text          0x00020ac0      0x148 obj\HOOK.O
+                0x00020b78                Hookc_MasterWrite
+                0x00020af2                Hookc_GetReadPrtl
+                0x00020bec                Hookc_Get_Custom_Table_Size
+                0x00020ac0                Hookc_Low_Power_Enter
+                0x00020b4a                Hookc_GetWritePrtl
+                0x00020b96                Hookc_SlaveDone
+                0x00020ae4                Hookc_Sys_Ctrl_Entry
+                0x00020ad2                Hookc_Unlock
+                0x00020be6                Hookc_Get_Kbd_Type
+                0x00020aee                Hookc_enable_FnSticky
+                0x00020c04                Hookc_Timer_A_Check
+                0x00020ad4                Hookc_Service_Scan
+                0x00020be2                Hookc_Get_Rc_Pntr
+                0x00020ae8                Hookc_OEM_Sys_Ctrl_Funct
+                0x00020ac6                Hookc_Exit_Idle
+                0x00020aca                Hookc_Get_Multibyte
+                0x00020be0                Hookc_Irq_Timer_A
+                0x00020aec                Hookc_Key_Proc
+                0x00020ac8                Hookc_Enter_Service
+                0x00020adc                Hookc_Write_EC
+                0x00020ae0                Hookc_Chk_Flashing_Safe
+                0x00020b98                Hookc_ReceivePrtl
+                0x00020aea                Hookc_Scan_Keys
+                0x00020bca                Hookc_Cfg_Slave_BufPntr
+                0x00020bf6                OEM_Chage_Default_HW_KBS_CFG
+                0x00020ad8                Hookc_Read_EC
+                0x00020ace                Hookc_Key_Enable
+                0x00020ac2                Hookc_Low_Power_Exit
+                0x00020bf2                Hookc_Get_Ext_Hotkey_Pntr
+ .text          0x00020c08      0x48c obj\SMB_TRAN.O
+                0x00020ea0                SMB_rdBLOCK
+                0x00020d6e                SMB_rdBYTE
+                0x00020e32                SMB_SEND
+                0x00020fb0                Get_Result
+                0x00020ffa                OEM_SMB_callback
+                0x00020c8c                SMB_wrBYTE
+                0x00020dd2                SMB_RECEIVE
+                0x00020f02                SMB_wrBLOCK
+                0x00020d0a                SMB_rdWORD
+                0x00020c08                SMB_wrWORD
+                0x00021082                Transfer_Finished
+ .text          0x00021094       0x7c obj\OEMINI.O
+                0x00021098                Hookc_Cold_Reset_Begin
+                0x000210ca                Modules_Control
+                0x00021096                Hookc_Warm_Reset_End
+                0x0002109a                Hookc_Cold_Reset_End
+                0x00021094                Hookc_Warm_Reset_Begin
+ .text          0x00021110      0x132 obj\OEMMAIN.O
+                0x0002116e                Service_OEM_10mS
+                0x0002123e                OEM_check_reference_clock
+                0x000211ee                Ticker_Update_32
+                0x000211ae                Service_OEM_1000mS
+                0x00021118                Hookc_Service_OEM_1
+                0x000211ec                Hookc_Service_Ext_Irq
+                0x00021186                Service_OEM_100mS
+                0x0002111a                Hookc_Service_OEM_2
+                0x0002111c                Hookc_Service_1mS
+                0x0002119a                Service_OEM_500mS
+                0x00021204                Ticker_Update_8
+                0x00021110                Hookc_Service_OEM_0
+                0x0002121a                Read_Port_Pin
+ .text          0x00021242       0xa6 obj\OEMCMDS.O
+                0x000212a4                Hookc_Pmx_Datb
+                0x000212b0                Hookc_Pmx_Cmdd
+                0x000212e0                Hookc_Pc_Cmd5
+                0x00021246                Hookc_Srvc_Pcdat
+                0x000212c4                Hookc_Pmx_Datf
+                0x00021258                Hookc_Pmx_Cmd2
+                0x0002125c                Hookc_Pmx_Dat2
+                0x00021278                Hookc_Pmx_Cmd6
+                0x000212dc                Hookc_Pc_Dat4
+                0x00021264                Hookc_Pmx_Dat3
+                0x000212ce                Hookc_All_Others
+                0x000212c8                Hookc_Self_Test
+                0x000212a8                Hookc_Pmx_Cmdc
+                0x00021294                Hookc_Pmx_Dat9
+                0x0002126c                Hookc_Pmx_Dat4
+                0x00021280                Hookc_Pmx_Cmd7
+                0x00021260                Hookc_Pmx_Cmd3
+                0x00021254                Hookc_Pmx_Dat1
+                0x0002127c                Hookc_Pmx_Dat6
+                0x000212d4                Hookc_Pc_Dat1
+                0x000212b4                Hookc_Pmx_Datd
+                0x000212c0                Hookc_Pmx_Cmdf
+                0x00021268                Hookc_Pmx_Cmd4
+                0x00021242                Hookc_Srvc_Pccmd
+                0x00021274                Hookc_Pmx_Dat5
+                0x00021288                Hookc_Pmx_Cmd8
+                0x0002128c                Hookc_Pmx_Dat8
+                0x00021250                Hookc_Pmx_Cmd1
+                0x00021290                Hookc_Pmx_Cmd9
+                0x00021284                Hookc_Pmx_Dat7
+                0x000212ac                Hookc_Pmx_Datc
+                0x00021248                Hookc_Pmx_Cmd0
+                0x000212d0                Hookc_Pc_Cmd1
+                0x000212d8                Hookc_Pc_Cmd4
+                0x000212a0                Hookc_Pmx_Cmdb
+                0x000212e4                Hookc_Pc_Dat5
+                0x0002124c                Hookc_Pmx_Dat0
+                0x00021270                Hookc_Pmx_Cmd5
+                0x00021298                Hookc_Pmx_Cmda
+                0x000212bc                Hookc_Pmx_Date
+                0x0002129c                Hookc_Pmx_Data
+                0x000212b8                Hookc_Pmx_Cmde
+ .text          0x000212e8       0x48 obj\HCONFIG.O
+                0x000212e8                HostModuleInit
+ .text          0x00021330      0x126 obj\EVENTS.O
+                0x00021338                Handle_Events
+                0x00021330                EventsInit
+                0x000213b6                ProcEventActive
+                0x00021420                Send_OEM_Key
+ .text          0x00021456      0x19e obj\PWRSEQ.O
+                0x0002148c                SeqNullHandle
+                0x000214a4                Seq_Step2
+                0x0002148e                Seq_Step1
+                0x00021540                SysStateChanged
+                0x00021468                HandlePwrSeq
+                0x000214ba                Seq_Step3
+                0x000214c4                Seq_Active
+                0x000214e8                Seq_Monitor_SysState
+                0x000215f2                StandbyIO
+                0x000215f0                SystemOnInit
+                0x00021456                PwrSeq_Init
+                0x000215ee                SystemOffInit
+ .text          0x000215f4       0x4a obj\A_TO_D.O
+                0x000215f6                Irq_ADC
+                0x00021624                inital_ADC
+                0x000215f4                Read_AtoD
+ .text          0x0002163e        0x4 obj\D_TO_A.O
+                0x0002163e                Write_DtoA
+ .text          0x00021642        0x4 obj\DEV.O
+                0x00021642                Do_Line_Test
+ .text          0x00021646      0x156 obj\SCAN.O
+                0x0002173e                Get_Kbd_Type
+                0x000216b0                Scan_Init
+                0x000216e0                Setup_Scanner_Pntr
+                0x000216a8                Read_Scan_Lines
+                0x000216a2                Write_Strobe
+                0x0002166c                Enable_Any_Key_Wakeup
+                0x00021646                Enable_Any_Key_Irq
+                0x00021782                Get_Custom_Table_Size
+                0x00021686                Disable_Any_Key_Wakeup
+ .text          0x0002179c      0x2b4 obj\PROC.O
+                0x000218a6                Read_Output_Port_2
+                0x00021904                Write_Output_Port_2
+                0x0002189a                Read_Input_Port_1
+                0x00021924                Extended_Read_Port
+                0x0002184c                Chip_Low_Power_Exit
+                0x0002179c                Chip_Low_Power_Enter
+                0x00021890                Get_Irq_Enable_Flag
+                0x0002195c                Extended_Write_Port
+ .text          0x00021a50     0x12a0 obj\I2C.O
+                0x00021dde                I2c_Get_Alarm
+                0x00021d54                I2c_Get_Alarm_State
+                0x00021cda                I2c_Get_Data
+                0x00022b60                I2C_Devalt_Cconfig
+                0x00022bd8                Free_Smb_Level_0
+                0x00022bf2                Handle_SMBus
+                0x00021a50                I2C_Init
+                0x00021b72                I2c_Execute_Protocol
+                0x00022bbc                Smb_Level_0_Free
+                0x00021c98                I2c_Irq
+                0x00021df4                I2c_Set_Alarm
+                0x00021d88                I2c_Reset_Alarm_State
+ .text          0x00022cf0      0x618 obj\ESPI.O
+                0x00022f48                eSPI_Configuration
+                0x000232a8                eSPI_FLASH_Test
+                0x00022dc8                eSPI_FLASH_Get
+                0x00022eb0                eSPI_VM_Write_VWEV_Reg
+                0x00023214                eSPI_OOB_Test
+                0x00023250                eSPI_OOB_Rcvd
+                0x00022d1a                eSPI_FLASH_Send
+                0x00023032                eSPI_IntHandler
+                0x00022e54                eSPI_OOB_Get
+                0x00022e12                eSPI_OOB_Send
+                0x00022fd0                eSPI_Init
+                0x00022ed0                eSPI_VM_Write
+                0x000232be                eSPI_FLASH_Rcvd
+                0x00022cf0                eSPI_VM_Read_VWEV_Reg
+                0x00022f2c                eSPI_VM_Read
+ .text          0x00023308      0x71c obj\PURXLT.O
+                0x000233ce                Send_Key
+                0x0002349c                Clear_Fn_Keys
+                0x00023308                Send_Scan2
+ .text          0x00023a24      0x128 obj\OEM.O
+                0x00023aac                OEM_Update_Ovl_Led
+                0x00023a24                Microsecond_Delay
+                0x00023b48                OEM_Warm_Reset_Check
+                0x00023a94                OEM_Write_Leds
+                0x00023b0e                OEM_Reset
+ .text          0x00023b4c      0x434 obj\IRQ.O
+                0x00023f48                Irq_Shm
+                0x00023b4c                Irq_Aux_Port1
+                0x00023e4c                Irq_Timer_B
+                0x00023c2e                Irq_Ibf1
+                0x00023f64                Irq_Obe1
+                0x00023ee4                Irq_Anykey
+                0x00023c76                Irq_Ibf2
+                0x00023cdc                Irq_Timer_A
+ .text          0x00023f80       0x80 obj\CLOCK.O
+                0x00023f80                clock_init
+                0x00023f86                fm_clock_get_freq
+                0x00023fe2                clock_get_freq
+ .text          0x00024000      0x132 obj\TIMERS.O
+                0x00024012                Enable_Timer_A
+                0x0002403c                Load_Timer_B
+                0x00024086                Load_Timer_PS2
+                0x00024022                Stop_Timer_A
+                0x00024080                Stop_Timer_B
+                0x00024000                Load_Timer_A
+                0x00024104                Timers_Init
+                0x000240ee                Enable_Timer_D
+                0x000240fe                Stop_Timer_D
+                0x000240b0                Stop_Timer_PS2
+                0x000240c0                Load_Timer_D
+ .text          0x00024132       0x96 obj\SIB.O
+                0x00024140                SIB_clear_lock
+                0x00024156                SIB_read_reg
+                0x00024150                SIB_get_violation
+                0x00024192                SIB_write_reg
+                0x00024132                SIB_set_lock
+ .text          0x000241c8      0x3dc obj\PWM.O
+                0x00024536                PWM_clock_select
+                0x00024278                PWM_ConfigHeartBeat
+                0x0002458e                PWM_custom_pattern
+                0x000244e6                PWM_config_force_active
+                0x000241c8                PWM_config
+                0x00024218                PWM_config_heart_beat_mode
+ .text          0x000245a4     0x1260 obj\CR_UART.O
+                0x000245ee                CR_UART_init
+                0x00024cf8                ReadFromSIB
+                0x00024638                Disable_UART_INT
+                0x000245a4                cmd_help
+                0x00025390                ConsoleCommandHandling
+                0x000257c0                PutConsole
+                0x00024738                ConsoleProcessInputFromISR
+                0x0002462e                Enable_UART_INT
+                0x00025484                uart_put_char
+                0x000254a2                uart_tx_ready
+                0x00024d28                cmd_kx
+                0x000247b6                Parsing_Console_CMD
+                0x000246b0                ConsoleCommandProcess
+                0x0002549a                uart_get_char
+                0x00024cce                Write2SIB
+                0x00025474                uart_enable_tx_int
+                0x0002466e                ConsoleProcessOutputFromISR
+                0x000249ac                cmd_wreg
+                0x000254aa                DEBUG_PRINTF
+                0x00024836                cmd_dreg
+                0x00024642                uart_get_int_type
+ .text          0x00025804      0x2de obj\HID.O
+                0x00025804                HID_Init
+                0x00025aae                Clear_emulate_Keys
+                0x00025a14                HotKey_to_HID
+                0x00025860                KBD_to_HID
+ .text          0x00025ae2      0x4ba obj\PURPM.O
+                0x00025ccc                Srvc_Pm1dat
+                0x00025b84                Srvc_Pm2cmd
+                0x00025d7c                Srvc_Pm2dat
+                0x00025dec                Srvc_Pm3dat
+                0x00025be8                Srvc_Pm3cmd
+                0x00025ae2                Srvc_Pm1cmd
+ .text          0x00025f9c      0x48e obj\HID_I2C.O
+                0x000261ec                Hidi2c_Slave_Cfg_BufPntr
+                0x000261bc                HID_I2C_Init
+                0x000261fc                Hidi2c_Slave_Rx
+                0x000262fa                Hidi2c_Slave_Tx
+                0x00025fee                Hidi2c_Slave_SendInputReport
+ .text          0x0002642a      0x3b0 obj\SENSRHUB.O
+                0x000266d4                Gravity_PreProcess
+                0x0002642a                Hidi2c_Slave_GetReportSize
+                0x00026584                Gsensor_report
+                0x0002676c                Angle_Calculate
+                0x00026522                Hidi2c_Slave_InitReportInput
+                0x00026430                Hidi2c_Slave_InitReportFeature
+ .text          0x000267da       0x36 obj\REG68Ax.O
+                0x000267da                Init_Regs
+ .text          0x00026810       0x80 obj\fu_init.o
+                0x00026840                FLASH_UPDATE_init
+                0x00026810                FLASH_UPDATE_copy_code_to_ram
+ .text          0x00026890       0x1e obj\fu_hndl.o
+                0x00026890                FLASH_UPDATE_handle
+ .text          0x000268ae       0x4a obj\shm.o
+                0x000268ae                SHM_window_config
+ .text          0x000268f8      0xe32 obj\libcore.a(PURMAIN.O)
+                0x00026c4c                service_pci3
+                0x00026fb6                Check_ITP
+                0x00026b12                service_pci2
+                0x000268f8                main
+ .text          0x0002772a      0x390 obj\libcore.a(PURINI.O)
+                0x00027940                Setup_Ext_Cbx
+                0x00027a94                Init_SXI
+                0x0002772a                Reset_Initialization
+ .text          0x00027aba      0x7d8 obj\libcore.a(PURCMD.O)
+                0x00027e4a                Srvc_Pcdat
+                0x00027b36                pc_datdum
+                0x00027c78                Pcxa8
+                0x00027be8                Pcxa6
+                0x00027aba                Srvc_Pccmd
+                0x00027d3c                Pcxae
+ .text          0x00028292      0xcda obj\libcore.a(PURSCN.O)
+                0x00028c8a                sndto_kbd
+                0x00028aa6                Clear_Key
+                0x00028a6c                Init_Kbd
+                0x00028b0a                Set_Typematic
+                0x00028f12                Set_Overlay_Mask
+                0x00028bda                Buffer_Mark
+                0x00028bf4                Buffer_Key
+                0x00028b8c                Get_Buffer
+                0x000289f8                Start_Scan_Transmission
+                0x00028a3c                Check_Scan_Transmission
+                0x00028af2                Clear_Typematic
+                0x000289dc                Lock_Scan
+                0x00028c5e                Buffer_String
+                0x00028b3e                Handle_Scan
+ .text          0x00028f6c      0x254 obj\libcore.a(PURDEV.O)
+                0x000290c4                Enable_Gentmo
+                0x00028fc6                Aux_Cmd_Setup
+                0x000290e8                Disable_Gentmo
+                0x00028f98                Lock_Aux_Devs
+                0x0002908c                Check_Transmit
+                0x00028f6c                Lock_Line
+                0x00029104                Inhibit_Delay
+                0x00028ff8                Send_To_Aux
+                0x00029120                Save_Mouse_State
+ .text          0x000291c0      0x376 obj\libcore.a(PUREXT.O)
+                0x00029348                Ext_Dat8
+                0x000291c4                HIF3_Cmd
+                0x000291c8                HIF2_Dat
+                0x000291d0                HIF4_Dat
+                0x000291dc                Ext_Cmd8
+                0x000291cc                HIF3_Dat
+                0x000291c0                HIF2_Cmd
+                0x000291d4                Ext_Cmd0
+                0x000291d8                Ext_Dat0
+                0x00029440                Ext_Datb
+                0x00029402                Ext_Cmdb
+ .text          0x00029536      0x75a obj\libcore.a(PURACPI.O)
+                0x0002987a                ACPI_Gen_Int
+                0x000296fc                ACPI_Dat
+                0x00029536                ACPI_Init
+                0x0002976c                Write_EC_Space
+                0x0002957a                Handle_ACPI
+                0x000295e4                ACPI_Cmd
+                0x0002973c                Read_EC_Space
+                0x0002981c                Set_SCI_Cause
+ .text          0x00029c90      0x260 obj\libcore.a(PURFUNCT.O)
+                0x00029c90                System_Control_Function
+                0x00029db8                Handle_Sys_Funct
+                0x00029da6                Sys_Funct_Init
+ .text          0x00029ef0       0x86 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+                0x00029ef0                atanf
+ .text          0x00029f76       0x10 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(mulsi3.o)
+                0x00029f76                __mulsi3
+ .text          0x00029f86       0xd4 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+                0x00029f86                sqrt
+ .text          0x0002a05a       0x2c C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+                0x0002a05a                strcmp
+ .text          0x0002a086       0x46 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+                0x0002a086                __udivsi3
+ .text          0x0002a0cc       0x40 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+                0x0002a0cc                _fast_uquo
+ .text          0x0002a10c       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+                0x0002a10c                _fast_urem
+ .text          0x0002a11e       0xfc C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+                0x0002a11e                _FAtan
+ .text          0x0002a21a       0xd6 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+                0x0002a21a                _FDscale
+ .text          0x0002a2f0       0x38 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+                0x0002a2f0                _FDtest
+ .text          0x0002a328       0x5a C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+                0x0002a328                _FDunscale
+ .text          0x0002a382       0x22 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+                0x0002a382                _Feraise
+ .text          0x0002a3a4       0x18 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+                0x0002a3a4                _Geterrno
+ .text          0x0002a3bc       0x88 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+                0x0002a3bc                _FDnorm
+ .text          0x0002a444       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+                0x0002a444                __floatsisf
+ .text          0x0002a4b2       0x46 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+                0x0002a4b2                __fixunssfsi
+ .text          0x0002a4f8      0x132 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+                0x0002a4f8                __addsf3
+ .text          0x0002a62a       0x10 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+                0x0002a62a                __negsf2
+ .text          0x0002a63a       0x24 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+                0x0002a63a                __subsf3
+ .text          0x0002a65e      0x12c C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+                0x0002a65e                __mulsf3
+ .text          0x0002a78a       0xb2 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+                0x0002a78a                __divsf3
+ .text          0x0002a83c       0x48 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+                0x0002a83c                __gtsf2
+ .text          0x0002a884       0x4e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+                0x0002a884                __ltsf2
+
+.init
+
+.data           0x00010000       0x66 load address 0x0002a8d2
+ *(.data)
+ *(.data_4)
+ *(.data_2)
+ .data_2        0x00010000        0x2 obj\CR_UART.O
+ .data_2        0x00010002       0x64 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+                0x00010002                _FDenorm
+                0x00010062                _FXbig
+                0x00010012                _FEps
+                0x00010022                _FInf
+                0x00010052                _FRteps
+                0x00010042                _FSnan
+                0x00010032                _FNan
+ *(.data_1)
+
+.end            0x0002a938     0x17c4
+ *(.rdata)
+ *(.rdata_4)
+ .rdata_4       0x0002a938        0x4 obj\PS2.O
+                0x0002a938                aux_pntr_table
+ .rdata_4       0x0002a93c       0xc0 obj\ICU.O
+                0x0002a93c                _dispatch_table
+ .rdata_4       0x0002a9fc      0x190 obj\PROC.O
+ .rdata_4       0x0002ab8c       0xbc obj\I2C.O
+                0x0002abd8                I2CTable
+                0x0002ab8c                I2c_Table
+ .rdata_4       0x0002ac48       0x10 obj\ESPI.O
+                0x0002ac48                OOB_Params
+ .rdata_4       0x0002ac58       0x8c obj\PURXLT.O
+                0x0002ac74                sskey2_A2_table
+                0x0002ac58                kcp_vector_table
+ .rdata_4       0x0002ace4       0x50 obj\CR_UART.O
+                0x0002ace4                Console_CMD_Mcb
+ .rdata_4       0x0002ad34      0x180 obj\PURPM.O
+                0x0002ae34                pm3cmd_table
+                0x0002adf4                pm2dat_table
+                0x0002ad74                pm1dat_table
+                0x0002adb4                pm2cmd_table
+                0x0002ad34                pm1cmd_table
+                0x0002ae74                pm3dat_table
+ .rdata_4       0x0002aeb4      0x3e8 obj\REG68Ax.O
+                0x0002aeb4                Reg_Init
+ .rdata_4       0x0002b29c       0x40 obj\libcore.a(PURMAIN.O)
+                0x0002b29c                service_table
+ .rdata_4       0x0002b2dc       0x80 obj\libcore.a(PURCMD.O)
+                0x0002b2dc                pccmd_table
+                0x0002b31c                pccmda_table
+ *(.rdata_2)
+ .rdata_2       0x0002b35c       0x5c obj\HOST_IF.O
+ .rdata_2       0x0002b3b8       0x12 obj\OEMINI.O
+ .rdata_2       0x0002b3ca       0x26 obj\OEMMAIN.O
+ .rdata_2       0x0002b3f0       0x1e obj\HCONFIG.O
+                0x0002b3f0                InitSIBTable
+ .rdata_2       0x0002b40e       0x38 obj\EVENTS.O
+ .rdata_2       0x0002b446      0x100 obj\I2C.O
+ .rdata_2       0x0002b546       0x38 obj\ESPI.O
+                0x0002b546                eSPI_VW_map_table
+ .rdata_2       0x0002b57e      0x120 obj\PURXLT.O
+                0x0002b5ce                ss2_A5
+                0x0002b5aa                ss2_9C
+                0x0002b5c2                ss2_A2
+                0x0002b5e2                sskey2_overlay_table
+                0x0002b5d6                ss2_A7
+                0x0002b5b6                ss2_9E
+                0x0002b57e                csr_brk1
+                0x0002b5ca                ss2_A4
+                0x0002b5be                ss2_A1
+                0x0002b5da                ss2_A8
+                0x0002b5b8                ss2_9F
+                0x0002b67a                SS_Qkey_table
+                0x0002b5ba                ss2_A0
+                0x0002b60e                sskey3_80_table
+                0x0002b5de                ss2_A9
+                0x0002b5d2                ss2_A6
+                0x0002b5ae                ss2_9D
+                0x0002b5c6                ss2_A3
+ .rdata_2       0x0002b69e       0x54 obj\OEM.O
+                0x0002b69e                Version
+ .rdata_2       0x0002b6f2      0x130 obj\CR_UART.O
+                0x0002b6f2                uCommandUsed
+ .rdata_2       0x0002b822       0xe8 obj\HID.O
+                0x0002b822                MediaKey_table
+ .rdata_2       0x0002b90a       0xcc obj\PURPM.O
+ .rdata_2       0x0002b9d6      0x372 obj\SENSRHUB.O
+                0x0002bd3c                Axis_Matrix
+                0x0002b9d6                Hidi2c_ReportDescriptor
+                0x0002bd1e                HID_Descriptor
+ .rdata_2       0x0002bd48       0xe4 obj\libcore.a(PURMAIN.O)
+                0x0002bd82                response_table
+ .rdata_2       0x0002be2c      0x112 obj\libcore.a(PURCMD.O)
+ .rdata_2       0x0002bf3e       0x5a obj\libcore.a(PURSCN.O)
+                0x0002bf3e                grey_table
+                0x0002bf6e                delay_tbl
+                0x0002bf4e                repeat_tbl
+ .rdata_2       0x0002bf98       0x34 obj\libcore.a(PURDEV.O)
+ .rdata_2       0x0002bfcc       0xa2 obj\libcore.a(PUREXT.O)
+                0x0002bfcc                HIF_To_SMBusChannel
+ .rdata_2       0x0002c06e       0x24 obj\libcore.a(PURACPI.O)
+ .rdata_2       0x0002c092       0x32 obj\libcore.a(PURFUNCT.O)
+ .rdata_2       0x0002c0c4        0x4 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .rdata_2       0x0002c0c8       0x34 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ *(.rdata_1)
+
+.bss            0x00010068       0x10
+                0x00010068                __BSS_START = .
+ *(.bss)
+ *(.bss_4)
+ .bss_4         0x00010068        0x4 obj\OEMDAT.O
+                0x00010068                pwrseq_handle
+ *(.bss_2)
+ .bss_2         0x0001006c        0x2 obj\HID_I2C.O
+ .bss_2         0x0001006e        0x4 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+                0x0001006e                _FZero
+ .bss_2         0x00010072        0x6 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+                0x00010074                _Tls_setup__Errno
+                0x00010072                _Errno
+ *(.bss_1)
+                0x00010078                __BSS_END = .
+
+.common         0x00010078      0x6d6
+ *(COMMON)
+ COMMON         0x00010078        0x1 obj\PS2.O
+                                  0x0 (size before relaxing)
+                0x00010078                ports_enabled
+ *fill*         0x00010079        0x1
+ COMMON         0x0001007a        0xc obj\SMB_TRAN.O
+                                  0x0 (size before relaxing)
+                0x0001007a                i2c_done
+                0x0001007e                ok
+                0x00010082                protocol
+ *fill*         0x00010086        0x2
+ COMMON         0x00010088        0x8 obj\OEMDAT.O
+                                  0x0 (size before relaxing)
+                0x0001008c                SysState
+                0x0001008d                PwrState
+                0x0001008e                ConfigHostModule
+                0x0001008f                SMBCtrl
+                0x00010088                PS_Ticker
+ COMMON         0x00010090       0x10 obj\EVENTS.O
+                                  0x0 (size before relaxing)
+                0x00010090                EventBounce
+                0x0001009e                PreEventState
+ COMMON         0x000100a0      0x1c0 obj\I2C.O
+                                  0x0 (size before relaxing)
+                0x000100a0                I2c_Var
+ COMMON         0x00010260       0xaf obj\ESPI.O
+                                  0x0 (size before relaxing)
+                0x00010260                OOB_Wdat_buf
+                0x000102b0                PCH_Temp
+                0x000102bc                FLASH_Data
+                0x0001030e                OOB_INDX
+                0x0001030c                MAFSRdCount
+                0x000102fc                RTC_Data
+ COMMON         0x0001030f        0x1 obj\PURXLT.O
+                                  0x0 (size before relaxing)
+                0x0001030f                temp_scanner_state
+ COMMON         0x00010310        0x4 obj\TIMERS.O
+                                  0x0 (size before relaxing)
+                0x00010310                time_minus_overhead
+                0x00010312                us_overhead
+ COMMON         0x00010314      0x157 obj\CR_UART.O
+                                  0x0 (size before relaxing)
+                0x00010328                RxBuff
+                0x00010314                argv
+                0x00010468                Tx_Index_IN
+                0x00010469                Rx_Index
+                0x00010368                TxBuff
+                0x0001046a                Tx_Index_OUT
+ *fill*         0x0001046b        0x1
+ COMMON         0x0001046c       0x11 obj\HID.O
+                                  0x0 (size before relaxing)
+                0x0001047a                Report_ID
+                0x0001047b                Comb_State
+                0x0001046c                kBuffer
+                0x00010478                bFnKeyHold
+                0x0001047c                KBD_Retry
+ *fill*         0x0001047d        0x1
+ COMMON         0x0001047e       0x71 obj\HID_I2C.O
+                                  0x0 (size before relaxing)
+                0x000104ea                Hidi2c_Slave_State
+                0x0001047e                Hidi2c_Slave_InputReportBuf
+                0x000104eb                Hidi2c_ReportType
+                0x000104aa                Hidi2c_Slave_Buf
+                0x000104ec                GS_report_EN
+                0x000104ed                Hidi2c_Slave_InputReportBufIdx
+                0x000104ee                Hidi2c_ReportID
+ *fill*         0x000104ef        0x1
+ COMMON         0x000104f0       0x6a obj\SENSRHUB.O
+                                  0x0 (size before relaxing)
+                0x000104f0                Angle_P
+                0x00010502                Hidi2c_RID2_FeatureReport
+                0x0001052d                Hidi2c_RID2_InputReport
+                0x0001053c                Sensor_num
+                0x0001053d                Hidi2c_RID1_InputReport
+                0x000104f2                Angle_B
+                0x000104f4                GS_rData
+                0x00010547                Hidi2c_RID1_FeatureReport
+                0x00010500                Angle_PB
+ *fill*         0x0001055a        0x2
+ COMMON         0x0001055c      0x16b obj\libcore.a(PURDAT.O)
+                                  0x0 (size before relaxing)
+                0x00010690                Timer_A
+                0x00010598                AD_Value
+                0x00010691                DIDLE_Delay
+                0x0001055c                Hif_Var
+                0x00010692                Gen_Info
+                0x00010693                SMI_Event_In_Index
+                0x000105a6                Service
+                0x00010694                Timer_A5
+                0x00010695                Keypro_Stat
+                0x00010696                Flag
+                0x00010698                Pass_Buff_Idx
+                0x00010699                Wakeup5
+                0x0001069a                Fn_Make_Key1
+                0x0001069b                Pass_On
+                0x0001069c                SHM_RC_STATUS
+                0x0001069d                Int_Var
+                0x0001069f                Gen_Timer
+                0x000105a8                Pass_Buff
+                0x000106a0                SCI_Event_In_Index
+                0x000106a1                Wakeup1
+                0x000106a2                Aux_Data
+                0x000105b0                SCI_Event_Buffer
+                0x000106a3                Wakeup4
+                0x000105b4                SMB_Status
+                0x000106a4                Timer_A4
+                0x000106a5                Ext_Cb0
+                0x000106a6                Led_Ctrl
+                0x000106a7                Ext_Cb2
+                0x000106a8                SHM_RC_VALUE
+                0x000106a9                Aux_Port1
+                0x000106b0                Timer_B
+                0x000106b1                Ps2_Ctrl
+                0x000105b8                Scanner_Strobe_Delay
+                0x000106b2                Pass_Make1
+                0x000106b3                Ccb42
+                0x000105ba                SMB_Buffer
+                0x0001064e                Int_Mouse
+                0x000106b4                Scanner_State
+                0x00010650                SMI_Event_Buffer
+                0x000106b5                Led_Data
+                0x000106b6                HIF2_Out_Data_Buffer
+                0x000106b7                Wakeup2
+                0x000106b8                MULPX
+                0x00010654                HIF_Response
+                0x000106b9                Mouse_Cmd
+                0x000106ba                SMI_Event_Out_Index
+                0x000106bb                Timer_A3
+                0x000106bc                Pass_Make2
+                0x00010658                Cause_Flags
+                0x0001065c                Mouse_State
+                0x000106bd                Save_Kbd_State
+                0x000106be                Save_Typematic
+                0x000106bf                Pass_Off
+                0x000106c0                Aux_Port_Ticker
+                0x000106c1                Aux_Status
+                0x000106c2                Wakeup3
+                0x000106c3                EC_Addr
+                0x000106c4                SCI_Event_Out_Index
+                0x000106c5                Expect_Count
+                0x000106c6                Ext_Cb3
+                0x00010660                EC_Space
+ *fill*         0x000106c7        0x1
+ COMMON         0x000106c8       0x5d obj\libcore.a(PURSCN.O)
+                                  0x0 (size before relaxing)
+                0x000106cc                new_keyl
+                0x0001071c                scan
+                0x000106dc                bfn_matrix
+                0x0001071f                bTMrepeat
+                0x000106ec                bscan_matrix
+                0x000106fc                new_keyh
+                0x00010720                last_key
+                0x00010721                bTMcount
+                0x0001070c                bKEY_BUFF
+                0x00010722                typematic
+                0x00010723                diode_key
+                0x000106c8                Scanner_Table_Pntr
+                0x00010724                bTMdelay
+ *fill*         0x00010725        0x3
+ COMMON         0x00010728        0x6 obj\libcore.a(PURACPI.O)
+                                  0x0 (size before relaxing)
+                0x0001072c                ACPI_Timer
+                0x0001072d                acpi_selector
+                0x00010728                acpi_service_pntr
+ COMMON         0x0001072e       0x20 obj\libcore.a(PURFUNCT.O)
+                                  0x0 (size before relaxing)
+                0x0001074c                Pulse_Width
+                0x0001074d                smi_timer
+                0x0001072e                input
+                0x00010736                Timed_Function
+                0x0001074a                millisecond_timer
+
+.sb             0x0001074e        0x0
+ *(.sb_1)
+ *(.sb_2)
+
+.heap           0x0001074e     0x7044
+                0x00017792                . = (. + (0x7900 - (((((( SIZEOF (.data) +  SIZEOF (.bss)) +  SIZEOF (.common)) +  SIZEOF (.sb)) + 0x100) + 0x60) + 0x10)))
+ *fill*         0x0001074e     0x7044
+
+.stack          0x00017792      0x100
+                0x00017892                . = (. + 0x100)
+ *fill*         0x00017792      0x100
+
+.istack         0x00017892       0x50
+                0x000178e2                . = (. + 0x50)
+ *fill*         0x00017892       0x50
+
+.cr_data        0x000178e2       0x10
+                0x000178f2                . = (. + 0x10)
+ *fill*         0x000178e2       0x10
+                0x00001000                _Do_Crisis_Vect = 0x1000
+                0x0001074e                __STATIC_BASE_START =  ADDR (.sb)
+                0x00000100                __STACK_SIZE =  SIZEOF (.stack)
+                0x00017892                __STACK_START = ( ADDR (.stack) + __STACK_SIZE)
+                0x000178e2                __ISTACK_START = ( ADDR (.istack) +  SIZEOF (.istack))
+                0x000178e2                __CR_DATA =  ADDR (.cr_data)
+                0x0001074e                __HEAP_START =  ADDR (.heap)
+                0x00017792                __HEAP_MAX = ( ADDR (.heap) +  SIZEOF (.heap))
+                0x0001074e                _HEAP$_START =  ADDR (.heap)
+                0x00010000                _RAM_TEST_START =  ADDR (.data)
+                0x00017791                _RAM_TEST_END = ( ADDR (.stack) - 0x1)
+                0x00020100                __ROM_BEGIN =  ADDR (.begin)
+                0x0000bffc                _ROM_SIZE = (( ADDR (.end) +  SIZEOF (.end)) -  ADDR (.begin))
+                0x00000004                _GAP = ((0x100 - (_ROM_SIZE & 0xff)) & 0xff)
+                0x000000c0                _ROM_SIZE_CODE = ((_ROM_SIZE + _GAP) / 0x100)
+                0x00017a00                _DBG = 0x17a00
+                0x00017ff0                _write_command_buffer = 0x17ff0
+                0x00000000                _CHECKSUM_DATA = 0x0
+                0x00000000                _REG_INIT_SIZE = 0x0
+                0x0002c0fc                _OUTSIDE_ADDR = ( ADDR (.end) +  SIZEOF (.end))
+                0x0002c0fc                _Rc_ROM_Tables = (_OUTSIDE_ADDR + _REG_INIT_SIZE)
+                0x00020184                __FWU_IMAGE_START =  LOADADDR (.fwu_ram_flash)
+                0x00017ff0                _write_command_buffer = 0x17ff0
+                0x00017fe0                _FLASH_commands = (_write_command_buffer - 0x10)
+                0x00017fde                _FLASH_jbb = (_FLASH_commands - 0x2)
+                0x00020100                _BOOT_BLOCK_ADDRESS = 0x20100
+OUTPUT(obj\ec_temp.x elf32-cr16c)
+
+.debug_abbrev   0x00000000     0x847b
+ .debug_abbrev  0x00000000       0x7d obj\HEADER.O
+ .debug_abbrev  0x0000007d       0x12 obj\RESET.O
+ .debug_abbrev  0x0000008f      0x226 obj\PS2.O
+ .debug_abbrev  0x000002b5      0x27a obj\HOST_IF.O
+ .debug_abbrev  0x0000052f      0x230 obj\ICU.O
+ .debug_abbrev  0x0000075f      0x2d6 obj\HOOK.O
+ .debug_abbrev  0x00000a35      0x282 obj\SMB_TRAN.O
+ .debug_abbrev  0x00000cb7      0x173 obj\OEMDAT.O
+ .debug_abbrev  0x00000e2a      0x1c5 obj\OEMINI.O
+ .debug_abbrev  0x00000fef      0x297 obj\OEMMAIN.O
+ .debug_abbrev  0x00001286      0x2ae obj\OEMCMDS.O
+ .debug_abbrev  0x00001534      0x17f obj\OEMPECI.O
+ .debug_abbrev  0x000016b3      0x1dd obj\HCONFIG.O
+ .debug_abbrev  0x00001890      0x252 obj\EVENTS.O
+ .debug_abbrev  0x00001ae2      0x258 obj\PWRSEQ.O
+ .debug_abbrev  0x00001d3a      0x1f3 obj\A_TO_D.O
+ .debug_abbrev  0x00001f2d      0x1a0 obj\D_TO_A.O
+ .debug_abbrev  0x000020cd      0x1f6 obj\DEV.O
+ .debug_abbrev  0x000022c3      0x277 obj\SCAN.O
+ .debug_abbrev  0x0000253a      0x297 obj\PROC.O
+ .debug_abbrev  0x000027d1      0x2d9 obj\I2C.O
+ .debug_abbrev  0x00002aaa      0x289 obj\ESPI.O
+ .debug_abbrev  0x00002d33      0x330 obj\PURXLT.O
+ .debug_abbrev  0x00003063      0x267 obj\OEM.O
+ .debug_abbrev  0x000032ca      0x236 obj\IRQ.O
+ .debug_abbrev  0x00003500      0x1b6 obj\CLOCK.O
+ .debug_abbrev  0x000036b6      0x1e8 obj\TIMERS.O
+ .debug_abbrev  0x0000389e      0x1ef obj\SIB.O
+ .debug_abbrev  0x00003a8d      0x227 obj\PWM.O
+ .debug_abbrev  0x00003cb4      0x178 obj\PORT80.O
+ .debug_abbrev  0x00003e2c      0x17f obj\PECI.O
+ .debug_abbrev  0x00003fab      0x3b1 obj\CR_UART.O
+ .debug_abbrev  0x0000435c      0x29e obj\HID.O
+ .debug_abbrev  0x000045fa      0x28f obj\PURPM.O
+ .debug_abbrev  0x00004889      0x30b obj\HID_I2C.O
+ .debug_abbrev  0x00004b94      0x262 obj\SENSRHUB.O
+ .debug_abbrev  0x00004df6      0x1e1 obj\REG68Ax.O
+ .debug_abbrev  0x00004fd7      0x1dc obj\fu_init.o
+ .debug_abbrev  0x000051b3      0x199 obj\fu_hndl.o
+ .debug_abbrev  0x0000534c      0x1e3 obj\fu_ram.o
+ .debug_abbrev  0x0000552f      0x204 obj\fu_utils.o
+ .debug_abbrev  0x00005733      0x1af obj\shm.o
+ .debug_abbrev  0x000058e2      0x2e6 obj\libcore.a(PURMAIN.O)
+ .debug_abbrev  0x00005bc8      0x2aa obj\libcore.a(PURINI.O)
+ .debug_abbrev  0x00005e72      0x180 obj\libcore.a(PURDAT.O)
+ .debug_abbrev  0x00005ff2      0x349 obj\libcore.a(PURCMD.O)
+ .debug_abbrev  0x0000633b      0x2ba obj\libcore.a(PURSCN.O)
+ .debug_abbrev  0x000065f5      0x2a8 obj\libcore.a(PURDEV.O)
+ .debug_abbrev  0x0000689d      0x2f4 obj\libcore.a(PUREXT.O)
+ .debug_abbrev  0x00006b91      0x31a obj\libcore.a(PURACPI.O)
+ .debug_abbrev  0x00006eab      0x2c4 obj\libcore.a(PURFUNCT.O)
+ .debug_abbrev  0x0000716f       0xde C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_abbrev  0x0000724d       0xe8 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_abbrev  0x00007335       0x78 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+ .debug_abbrev  0x000073ad       0x61 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+ .debug_abbrev  0x0000740e       0x61 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+ .debug_abbrev  0x0000746f       0x52 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+ .debug_abbrev  0x000074c1      0x105 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_abbrev  0x000075c6       0xde C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_abbrev  0x000076a4       0xb7 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_abbrev  0x0000775b       0xb7 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_abbrev  0x00007812       0xae C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_abbrev  0x000078c0       0x88 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+ .debug_abbrev  0x00007948      0x116 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_abbrev  0x00007a5e       0xb7 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+ .debug_abbrev  0x00007b15      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+ .debug_abbrev  0x00007c1f      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+ .debug_abbrev  0x00007d29      0x108 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_abbrev  0x00007e31      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+ .debug_abbrev  0x00007f3b      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+ .debug_abbrev  0x00008045      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+ .debug_abbrev  0x0000814f      0x10a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+ .debug_abbrev  0x00008259      0x111 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_abbrev  0x0000836a      0x111 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+
+.debug_info     0x00000000    0x56542
+ .debug_info    0x00000000      0x2e1 obj\HEADER.O
+ .debug_info    0x000002e1       0x79 obj\RESET.O
+ .debug_info    0x0000035a     0x1748 obj\PS2.O
+ .debug_info    0x00001aa2     0x186d obj\HOST_IF.O
+ .debug_info    0x0000330f     0x2085 obj\ICU.O
+ .debug_info    0x00005394     0x2588 obj\HOOK.O
+ .debug_info    0x0000791c     0x18e1 obj\SMB_TRAN.O
+ .debug_info    0x000091fd     0x121c obj\OEMDAT.O
+ .debug_info    0x0000a419     0x1491 obj\OEMINI.O
+ .debug_info    0x0000b8aa     0x1cce obj\OEMMAIN.O
+ .debug_info    0x0000d578     0x24f4 obj\OEMCMDS.O
+ .debug_info    0x0000fa6c     0x15ad obj\OEMPECI.O
+ .debug_info    0x00011019     0x12b2 obj\HCONFIG.O
+ .debug_info    0x000122cb     0x18a2 obj\EVENTS.O
+ .debug_info    0x00013b6d     0x1a1f obj\PWRSEQ.O
+ .debug_info    0x0001558c     0x1677 obj\A_TO_D.O
+ .debug_info    0x00016c03     0x1256 obj\D_TO_A.O
+ .debug_info    0x00017e59     0x18c7 obj\DEV.O
+ .debug_info    0x00019720     0x1833 obj\SCAN.O
+ .debug_info    0x0001af53     0x1c81 obj\PROC.O
+ .debug_info    0x0001cbd4     0x2b6e obj\I2C.O
+ .debug_info    0x0001f742     0x2115 obj\ESPI.O
+ .debug_info    0x00021857     0x2490 obj\PURXLT.O
+ .debug_info    0x00023ce7     0x1885 obj\OEM.O
+ .debug_info    0x0002556c     0x1cbc obj\IRQ.O
+ .debug_info    0x00027228     0x11e9 obj\CLOCK.O
+ .debug_info    0x00028411     0x16bd obj\TIMERS.O
+ .debug_info    0x00029ace     0x1326 obj\SIB.O
+ .debug_info    0x0002adf4     0x19b2 obj\PWM.O
+ .debug_info    0x0002c7a6     0x1582 obj\PORT80.O
+ .debug_info    0x0002dd28     0x15a3 obj\PECI.O
+ .debug_info    0x0002f2cb     0x21b9 obj\CR_UART.O
+ .debug_info    0x00031484     0x1b87 obj\HID.O
+ .debug_info    0x0003300b     0x2568 obj\PURPM.O
+ .debug_info    0x00035573     0x20b8 obj\HID_I2C.O
+ .debug_info    0x0003762b     0x1a3c obj\SENSRHUB.O
+ .debug_info    0x00039067     0x1834 obj\REG68Ax.O
+ .debug_info    0x0003a89b     0x13f2 obj\fu_init.o
+ .debug_info    0x0003bc8d     0x12ac obj\fu_hndl.o
+ .debug_info    0x0003cf39     0x1452 obj\fu_ram.o
+ .debug_info    0x0003e38b     0x159c obj\fu_utils.o
+ .debug_info    0x0003f927     0x1288 obj\shm.o
+ .debug_info    0x00040baf     0x243c obj\libcore.a(PURMAIN.O)
+ .debug_info    0x00042feb     0x1fd5 obj\libcore.a(PURINI.O)
+ .debug_info    0x00044fc0     0x1843 obj\libcore.a(PURDAT.O)
+ .debug_info    0x00046803     0x216d obj\libcore.a(PURCMD.O)
+ .debug_info    0x00048970     0x2220 obj\libcore.a(PURSCN.O)
+ .debug_info    0x0004ab90     0x190e obj\libcore.a(PURDEV.O)
+ .debug_info    0x0004c49e     0x1f65 obj\libcore.a(PUREXT.O)
+ .debug_info    0x0004e403     0x1f5c obj\libcore.a(PURACPI.O)
+ .debug_info    0x0005035f     0x1c4d obj\libcore.a(PURFUNCT.O)
+ .debug_info    0x00051fac      0x356 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_info    0x00052302      0x366 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_info    0x00052668      0x1c6 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+ .debug_info    0x0005282e      0x102 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+ .debug_info    0x00052930      0x105 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+ .debug_info    0x00052a35       0xd7 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+ .debug_info    0x00052b0c      0x404 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_info    0x00052f10      0x2cc C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_info    0x000531dc      0x270 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_info    0x0005344c      0x296 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_info    0x000536e2      0x236 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_info    0x00053918      0x2c8 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+ .debug_info    0x00053be0      0x81b C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_info    0x000543fb      0x27b C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+ .debug_info    0x00054676      0x353 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+ .debug_info    0x000549c9      0x352 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+ .debug_info    0x00054d1b      0x3a2 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_info    0x000550bd      0x334 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+ .debug_info    0x000553f1      0x359 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+ .debug_info    0x0005574a      0x38a C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+ .debug_info    0x00055ad4      0x396 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+ .debug_info    0x00055e6a      0x36c C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_info    0x000561d6      0x36c C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+
+.debug_line     0x00000000     0xdba6
+ .debug_line    0x00000000       0x35 obj\HEADER.O
+ .debug_line    0x00000035       0xc5 obj\RESET.O
+ .debug_line    0x000000fa      0x172 obj\PS2.O
+ .debug_line    0x0000026c      0x303 obj\HOST_IF.O
+ .debug_line    0x0000056f      0x543 obj\ICU.O
+ .debug_line    0x00000ab2      0x3dd obj\HOOK.O
+ .debug_line    0x00000e8f      0x418 obj\SMB_TRAN.O
+ .debug_line    0x000012a7       0x5e obj\OEMDAT.O
+ .debug_line    0x00001305      0x186 obj\OEMINI.O
+ .debug_line    0x0000148b      0x2ee obj\OEMMAIN.O
+ .debug_line    0x00001779      0x393 obj\OEMCMDS.O
+ .debug_line    0x00001b0c       0x69 obj\OEMPECI.O
+ .debug_line    0x00001b75       0xa0 obj\HCONFIG.O
+ .debug_line    0x00001c15      0x1e2 obj\EVENTS.O
+ .debug_line    0x00001df7      0x33c obj\PWRSEQ.O
+ .debug_line    0x00002133      0x105 obj\A_TO_D.O
+ .debug_line    0x00002238       0x6e obj\D_TO_A.O
+ .debug_line    0x000022a6       0xa7 obj\DEV.O
+ .debug_line    0x0000234d      0x273 obj\SCAN.O
+ .debug_line    0x000025c0      0x477 obj\PROC.O
+ .debug_line    0x00002a37     0x142a obj\I2C.O
+ .debug_line    0x00003e61      0x681 obj\ESPI.O
+ .debug_line    0x000044e2      0x8eb obj\PURXLT.O
+ .debug_line    0x00004dcd      0x245 obj\OEM.O
+ .debug_line    0x00005012      0x54a obj\IRQ.O
+ .debug_line    0x0000555c       0xc8 obj\CLOCK.O
+ .debug_line    0x00005624      0x260 obj\TIMERS.O
+ .debug_line    0x00005884      0x15d obj\SIB.O
+ .debug_line    0x000059e1      0x30f obj\PWM.O
+ .debug_line    0x00005cf0       0x7c obj\PORT80.O
+ .debug_line    0x00005d6c       0x5f obj\PECI.O
+ .debug_line    0x00005dcb      0xaa3 obj\CR_UART.O
+ .debug_line    0x0000686e      0x3f1 obj\HID.O
+ .debug_line    0x00006c5f      0x5e7 obj\PURPM.O
+ .debug_line    0x00007246      0x546 obj\HID_I2C.O
+ .debug_line    0x0000778c      0x499 obj\SENSRHUB.O
+ .debug_line    0x00007c25       0xee obj\REG68Ax.O
+ .debug_line    0x00007d13       0xd9 obj\fu_init.o
+ .debug_line    0x00007dec       0x90 obj\fu_hndl.o
+ .debug_line    0x00007e7c      0x318 obj\fu_ram.o
+ .debug_line    0x00008194      0x282 obj\fu_utils.o
+ .debug_line    0x00008416       0xb5 obj\shm.o
+ .debug_line    0x000084cb     0x10f2 obj\libcore.a(PURMAIN.O)
+ .debug_line    0x000095bd      0x5a9 obj\libcore.a(PURINI.O)
+ .debug_line    0x00009b66       0x5e obj\libcore.a(PURDAT.O)
+ .debug_line    0x00009bc4      0xa2e obj\libcore.a(PURCMD.O)
+ .debug_line    0x0000a5f2      0xc9a obj\libcore.a(PURSCN.O)
+ .debug_line    0x0000b28c      0x3d9 obj\libcore.a(PURDEV.O)
+ .debug_line    0x0000b665      0x4e4 obj\libcore.a(PUREXT.O)
+ .debug_line    0x0000bb49      0x8c7 obj\libcore.a(PURACPI.O)
+ .debug_line    0x0000c410      0x44d obj\libcore.a(PURFUNCT.O)
+ .debug_line    0x0000c85d      0x154 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_line    0x0000c9b1      0x175 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_line    0x0000cb26       0xf5 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+ .debug_line    0x0000cc1b       0xe1 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+ .debug_line    0x0000ccfc       0xe1 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+ .debug_line    0x0000cddd       0x54 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+ .debug_line    0x0000ce31      0x179 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_line    0x0000cfaa      0x1ae C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_line    0x0000d158      0x109 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_line    0x0000d261      0x134 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_line    0x0000d395      0x101 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_line    0x0000d496       0xd2 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+ .debug_line    0x0000d568      0x107 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_line    0x0000d66f      0x159 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+ .debug_line    0x0000d7c8       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+ .debug_line    0x0000d836       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+ .debug_line    0x0000d8a4       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_line    0x0000d912       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+ .debug_line    0x0000d980       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+ .debug_line    0x0000d9ee       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+ .debug_line    0x0000da5c       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+ .debug_line    0x0000daca       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_line    0x0000db38       0x6e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+
+.debug_pubnames
+                0x00000000     0x2fd4
+ .debug_pubnames
+                0x00000000       0x23 obj\HEADER.O
+ .debug_pubnames
+                0x00000023       0x9c obj\PS2.O
+ .debug_pubnames
+                0x000000bf       0x71 obj\HOST_IF.O
+ .debug_pubnames
+                0x00000130      0x22c obj\ICU.O
+ .debug_pubnames
+                0x0000035c      0x2c1 obj\HOOK.O
+ .debug_pubnames
+                0x0000061d       0xe6 obj\SMB_TRAN.O
+ .debug_pubnames
+                0x00000703       0x6d obj\OEMDAT.O
+ .debug_pubnames
+                0x00000770       0x8e obj\OEMINI.O
+ .debug_pubnames
+                0x000007fe      0x13b obj\OEMMAIN.O
+ .debug_pubnames
+                0x00000939      0x331 obj\OEMCMDS.O
+ .debug_pubnames
+                0x00000c6a       0x36 obj\HCONFIG.O
+ .debug_pubnames
+                0x00000ca0       0x7a obj\EVENTS.O
+ .debug_pubnames
+                0x00000d1a       0xdc obj\PWRSEQ.O
+ .debug_pubnames
+                0x00000df6       0x3b obj\A_TO_D.O
+ .debug_pubnames
+                0x00000e31       0x21 obj\D_TO_A.O
+ .debug_pubnames
+                0x00000e52       0x23 obj\DEV.O
+ .debug_pubnames
+                0x00000e75       0xd3 obj\SCAN.O
+ .debug_pubnames
+                0x00000f48       0xcf obj\PROC.O
+ .debug_pubnames
+                0x00001017      0x124 obj\I2C.O
+ .debug_pubnames
+                0x0000113b      0x1b5 obj\ESPI.O
+ .debug_pubnames
+                0x000012f0      0x166 obj\PURXLT.O
+ .debug_pubnames
+                0x00001456       0x85 obj\OEM.O
+ .debug_pubnames
+                0x000014db       0x86 obj\IRQ.O
+ .debug_pubnames
+                0x00001561       0x4a obj\CLOCK.O
+ .debug_pubnames
+                0x000015ab       0xfc obj\TIMERS.O
+ .debug_pubnames
+                0x000016a7       0x6f obj\SIB.O
+ .debug_pubnames
+                0x00001716       0xa0 obj\PWM.O
+ .debug_pubnames
+                0x000017b6      0x21d obj\CR_UART.O
+ .debug_pubnames
+                0x000019d3       0xb0 obj\HID.O
+ .debug_pubnames
+                0x00001a83       0xd8 obj\PURPM.O
+ .debug_pubnames
+                0x00001b5b      0x133 obj\HID_I2C.O
+ .debug_pubnames
+                0x00001c8e      0x1a7 obj\SENSRHUB.O
+ .debug_pubnames
+                0x00001e35       0x2d obj\REG68Ax.O
+ .debug_pubnames
+                0x00001e62       0xe5 obj\fu_init.o
+ .debug_pubnames
+                0x00001f47       0xc5 obj\fu_hndl.o
+ .debug_pubnames
+                0x0000200c       0xfc obj\fu_ram.o
+ .debug_pubnames
+                0x00002108      0x1a9 obj\fu_utils.o
+ .debug_pubnames
+                0x000022b1       0x39 obj\shm.o
+ .debug_pubnames
+                0x000022ea       0x70 obj\libcore.a(PURMAIN.O)
+ .debug_pubnames
+                0x0000235a       0x4a obj\libcore.a(PURINI.O)
+ .debug_pubnames
+                0x000023a4      0x3b1 obj\libcore.a(PURDAT.O)
+ .debug_pubnames
+                0x00002755       0x7d obj\libcore.a(PURCMD.O)
+ .debug_pubnames
+                0x000027d2      0x1f1 obj\libcore.a(PURSCN.O)
+ .debug_pubnames
+                0x000029c3       0xb3 obj\libcore.a(PURDEV.O)
+ .debug_pubnames
+                0x00002a76       0xb9 obj\libcore.a(PUREXT.O)
+ .debug_pubnames
+                0x00002b2f       0xc9 obj\libcore.a(PURACPI.O)
+ .debug_pubnames
+                0x00002bf8       0xa7 obj\libcore.a(PURFUNCT.O)
+ .debug_pubnames
+                0x00002c9f       0x1c C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_pubnames
+                0x00002cbb       0x1b C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_pubnames
+                0x00002cd6       0x1d C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+ .debug_pubnames
+                0x00002cf3       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+ .debug_pubnames
+                0x00002d13       0x21 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+ .debug_pubnames
+                0x00002d34       0x21 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+ .debug_pubnames
+                0x00002d55       0x1d C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_pubnames
+                0x00002d72       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_pubnames
+                0x00002d91       0x1e C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_pubnames
+                0x00002daf       0x21 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_pubnames
+                0x00002dd0       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_pubnames
+                0x00002def       0x6a C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+ .debug_pubnames
+                0x00002e59       0x41 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_pubnames
+                0x00002e9a       0x1e C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+ .debug_pubnames
+                0x00002eb8       0x22 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+ .debug_pubnames
+                0x00002eda       0x23 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+ .debug_pubnames
+                0x00002efd       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_pubnames
+                0x00002f1c       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+ .debug_pubnames
+                0x00002f3b       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+ .debug_pubnames
+                0x00002f5a       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+ .debug_pubnames
+                0x00002f79       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+ .debug_pubnames
+                0x00002f98       0x1e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_pubnames
+                0x00002fb6       0x1e C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+
+.debug_str      0x00000000      0xe3b
+ .debug_str     0x00000000       0x12 obj\HEADER.O
+ .debug_str     0x00000012       0x2c obj\PS2.O
+ .debug_str     0x0000003e       0x37 obj\HOST_IF.O
+ .debug_str     0x00000075       0x2c obj\ICU.O
+ .debug_str     0x000000a1      0x104 obj\HOOK.O
+ .debug_str     0x000001a5       0x68 obj\SMB_TRAN.O
+ .debug_str     0x0000020d       0x2c obj\OEMDAT.O
+ .debug_str     0x00000239       0x2c obj\OEMINI.O
+ .debug_str     0x00000265       0x2c obj\OEMMAIN.O
+ .debug_str     0x00000291       0x3d obj\OEMCMDS.O
+ .debug_str     0x000002ce       0x2c obj\OEMPECI.O
+ .debug_str     0x000002fa       0x2c obj\HCONFIG.O
+ .debug_str     0x00000326       0x31 obj\EVENTS.O
+ .debug_str     0x00000357       0x2c obj\PWRSEQ.O
+ .debug_str     0x00000383       0x2c obj\A_TO_D.O
+ .debug_str     0x000003af       0x2c obj\D_TO_A.O
+ .debug_str     0x000003db       0x31 obj\DEV.O
+ .debug_str     0x0000040c       0x31 obj\SCAN.O
+ .debug_str     0x0000043d       0x2c obj\PROC.O
+ .debug_str     0x00000469       0x68 obj\I2C.O
+ .debug_str     0x000004d1       0x2c obj\ESPI.O
+ .debug_str     0x000004fd       0x64 obj\PURXLT.O
+ .debug_str     0x00000561       0x31 obj\OEM.O
+ .debug_str     0x00000592       0x31 obj\IRQ.O
+ .debug_str     0x000005c3       0x2c obj\CLOCK.O
+ .debug_str     0x000005ef       0x2c obj\TIMERS.O
+ .debug_str     0x0000061b       0x3e obj\SIB.O
+ .debug_str     0x00000659       0x44 obj\PWM.O
+ .debug_str     0x0000069d       0x2c obj\PORT80.O
+ .debug_str     0x000006c9       0x2c obj\PECI.O
+ .debug_str     0x000006f5       0x42 obj\CR_UART.O
+ .debug_str     0x00000737       0x43 obj\HID.O
+ .debug_str     0x0000077a       0x4a obj\PURPM.O
+ .debug_str     0x000007c4       0xf8 obj\HID_I2C.O
+ .debug_str     0x000008bc       0xea obj\SENSRHUB.O
+ .debug_str     0x000009a6       0x2c obj\REG68Ax.O
+ .debug_str     0x000009d2       0x2c obj\fu_init.o
+ .debug_str     0x000009fe       0x2c obj\fu_hndl.o
+ .debug_str     0x00000a2a       0x2c obj\fu_ram.o
+ .debug_str     0x00000a56       0x2c obj\fu_utils.o
+ .debug_str     0x00000a82       0x2c obj\shm.o
+ .debug_str     0x00000aae       0x68 obj\libcore.a(PURMAIN.O)
+ .debug_str     0x00000b16       0x31 obj\libcore.a(PURINI.O)
+ .debug_str     0x00000b47       0x31 obj\libcore.a(PURDAT.O)
+ .debug_str     0x00000b78       0x42 obj\libcore.a(PURCMD.O)
+ .debug_str     0x00000bba       0x82 obj\libcore.a(PURSCN.O)
+ .debug_str     0x00000c3c       0x4b obj\libcore.a(PURDEV.O)
+ .debug_str     0x00000c87       0x4c obj\libcore.a(PUREXT.O)
+ .debug_str     0x00000cd3       0x52 obj\libcore.a(PURACPI.O)
+ .debug_str     0x00000d25       0x31 obj\libcore.a(PURFUNCT.O)
+ .debug_str     0x00000d56       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_str     0x00000d75       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_str     0x00000d94       0x1f C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_str     0x00000db3       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_str     0x00000dc5       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_str     0x00000dd7       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_str     0x00000de9       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_str     0x00000dfb       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfvalues.o)
+ .debug_str     0x00000e0d       0x1c C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_str     0x00000e29       0x12 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+
+.debug_aranges  0x00000000      0x860
+ .debug_aranges
+                0x00000000       0x20 obj\RESET.O
+ .debug_aranges
+                0x00000020       0x20 obj\PS2.O
+ .debug_aranges
+                0x00000040       0x20 obj\HOST_IF.O
+ .debug_aranges
+                0x00000060       0x20 obj\ICU.O
+ .debug_aranges
+                0x00000080       0x20 obj\HOOK.O
+ .debug_aranges
+                0x000000a0       0x20 obj\SMB_TRAN.O
+ .debug_aranges
+                0x000000c0       0x20 obj\OEMINI.O
+ .debug_aranges
+                0x000000e0       0x20 obj\OEMMAIN.O
+ .debug_aranges
+                0x00000100       0x20 obj\OEMCMDS.O
+ .debug_aranges
+                0x00000120       0x20 obj\HCONFIG.O
+ .debug_aranges
+                0x00000140       0x20 obj\EVENTS.O
+ .debug_aranges
+                0x00000160       0x20 obj\PWRSEQ.O
+ .debug_aranges
+                0x00000180       0x20 obj\A_TO_D.O
+ .debug_aranges
+                0x000001a0       0x20 obj\D_TO_A.O
+ .debug_aranges
+                0x000001c0       0x20 obj\DEV.O
+ .debug_aranges
+                0x000001e0       0x20 obj\SCAN.O
+ .debug_aranges
+                0x00000200       0x20 obj\PROC.O
+ .debug_aranges
+                0x00000220       0x20 obj\I2C.O
+ .debug_aranges
+                0x00000240       0x20 obj\ESPI.O
+ .debug_aranges
+                0x00000260       0x20 obj\PURXLT.O
+ .debug_aranges
+                0x00000280       0x20 obj\OEM.O
+ .debug_aranges
+                0x000002a0       0x20 obj\IRQ.O
+ .debug_aranges
+                0x000002c0       0x20 obj\CLOCK.O
+ .debug_aranges
+                0x000002e0       0x20 obj\TIMERS.O
+ .debug_aranges
+                0x00000300       0x20 obj\SIB.O
+ .debug_aranges
+                0x00000320       0x20 obj\PWM.O
+ .debug_aranges
+                0x00000340       0x20 obj\CR_UART.O
+ .debug_aranges
+                0x00000360       0x20 obj\HID.O
+ .debug_aranges
+                0x00000380       0x20 obj\PURPM.O
+ .debug_aranges
+                0x000003a0       0x20 obj\HID_I2C.O
+ .debug_aranges
+                0x000003c0       0x20 obj\SENSRHUB.O
+ .debug_aranges
+                0x000003e0       0x20 obj\REG68Ax.O
+ .debug_aranges
+                0x00000400       0x20 obj\fu_init.o
+ .debug_aranges
+                0x00000420       0x20 obj\fu_hndl.o
+ .debug_aranges
+                0x00000440       0x20 obj\fu_ram.o
+ .debug_aranges
+                0x00000460       0x20 obj\fu_utils.o
+ .debug_aranges
+                0x00000480       0x20 obj\shm.o
+ .debug_aranges
+                0x000004a0       0x20 obj\libcore.a(PURMAIN.O)
+ .debug_aranges
+                0x000004c0       0x20 obj\libcore.a(PURINI.O)
+ .debug_aranges
+                0x000004e0       0x20 obj\libcore.a(PURCMD.O)
+ .debug_aranges
+                0x00000500       0x20 obj\libcore.a(PURSCN.O)
+ .debug_aranges
+                0x00000520       0x20 obj\libcore.a(PURDEV.O)
+ .debug_aranges
+                0x00000540       0x20 obj\libcore.a(PUREXT.O)
+ .debug_aranges
+                0x00000560       0x20 obj\libcore.a(PURACPI.O)
+ .debug_aranges
+                0x00000580       0x20 obj\libcore.a(PURFUNCT.O)
+ .debug_aranges
+                0x000005a0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(atanf.o)
+ .debug_aranges
+                0x000005c0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(sqrt.o)
+ .debug_aranges
+                0x000005e0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(strcmp.o)
+ .debug_aranges
+                0x00000600       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udivsi3.o)
+ .debug_aranges
+                0x00000620       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(udiv_em.o)
+ .debug_aranges
+                0x00000640       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(umod.o)
+ .debug_aranges
+                0x00000660       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfatan.o)
+ .debug_aranges
+                0x00000680       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdscale.o)
+ .debug_aranges
+                0x000006a0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdtest.o)
+ .debug_aranges
+                0x000006c0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdunsca.o)
+ .debug_aranges
+                0x000006e0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xferaise.o)
+ .debug_aranges
+                0x00000700       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(errno.o)
+ .debug_aranges
+                0x00000720       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libc.a(xfdnorm.o)
+ .debug_aranges
+                0x00000740       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_floatsisf.o)
+ .debug_aranges
+                0x00000760       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_fixunssfsi.o)
+ .debug_aranges
+                0x00000780       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_aranges
+                0x000007a0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_negsf2.o)
+ .debug_aranges
+                0x000007c0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_subsf3.o)
+ .debug_aranges
+                0x000007e0       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_mulsf3.o)
+ .debug_aranges
+                0x00000800       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_divsf3.o)
+ .debug_aranges
+                0x00000820       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_aranges
+                0x00000840       0x20 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)
+
+.debug_ranges   0x00000000       0x48
+ .debug_ranges  0x00000000       0x18 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_addsf3.o)
+ .debug_ranges  0x00000018       0x18 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_gtsf2.o)
+ .debug_ranges  0x00000030       0x18 C:\PROGRA~2\CR164.1/lib16c_O\libhfp.a(_ltsf2.o)

@@ -1,0 +1,308 @@
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 1
+
+
+
+##### File "chip\SELFTEST.s" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE SELFTEST.S
+     3                          #
+     4                          # Copyright(c) 1996-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          #
+    13                          # This file contains code used to perform the self test.
+    14                          #
+    15                          # Revision History (Started December 11, 1996 by GLP)
+    16                          #
+    17                          # GLP
+    18                          # 19 Aug 99	Updated copyright.
+    19                          # -----------------------------------------------------------------------------
+    20                          
+    21                             .text
+    22                             .align	2
+    23                          
+    24                          # -----------------------------------------------------------------------------
+    25                          # MACRO Name: TEST_REG
+    26                          #
+    27                          # Tests a register by writing "checkerboard" data patterns
+    28                          # (AA and 55), and then reading back the data (for each pattern)
+    29                          # to check data integrity.
+    30                          #
+    31                          # Returns: Zero flag clear if bad register.
+    32                          # -----------------------------------------------------------------------------
+    33                          
+    34                                  .macro TEST_REG regname
+    34                                  movw    $0xAAAA,{regname}
+    34                                  cmpw    $0xAAAA,{regname}
+    34                                  bne     1f
+    34                          
+    34                                  movw    $0x5555,{regname}
+    34                                  cmpw    $0x5555,{regname}
+    34                          1:
+    34                                  .endm
+    43                          
+    44                          # -----------------------------------------------------------------------------
+    45                          # Name: Self_Test
+    46                          #
+    47                          # Test registers, flags, and RAM.
+    48                          #
+    49                          # Input: Enter with interrupts disabled.
+    50                          #
+    51                          # Returns: 0x55 if test passed, 0 if test failed.
+    52                          #
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 2
+
+
+    53                          # C prototype:
+    54                          #    WORD Self_Test(void);
+    55                          # -----------------------------------------------------------------------------
+    56                          
+    57                          # This is a C routine coded in assembly language.
+    58                          
+    59                             .globl      _Self_Test
+    60  T00000000               _Self_Test:
+    61  T00000000  bf60fcff              addd    $0xfffffffc,(sp)
+    62  T00000004  efe0                  stord   (ra),0:s(sp)
+    63                          
+    64                          # The flags are checked first to allow them to be used in the test.
+    65                          # At this point, it is assumed that R0 is OK.
+    66                          
+    67  T00000006  14009020        spr	psr,r0          # Get the Processor Status Register.
+    68  T0000000a  b026e500        orw	$0xE5,r0        # Set Carry, Low, Flag,
+    69  T0000000e  14009000        lpr	r0,psr          # Zero, and Negative bits.
+    70                          
+    71  T00000012  30188601             bcc     bad_test        # Carry    (bit 0)
+    72  T00000016  50188201             bls     bad_test        # Low      (bit 2)
+    73  T0000001a  90187e01             bfc     bad_test        # Flag     (bit 5)
+    74  T0000001e  10187a01             bne     bad_test        # Zero     (bit 6)
+    75  T00000022  70187601             ble     bad_test        # Negative (bit 7)
+    76                          
+    77  T00000026  b0221aff        andw	$0xFF1A,r0      # Clear Carry, Low, Flag,
+    78  T0000002a  14009000        lpr	r0,psr          # Zero, and Negative bits.
+    79                          
+    80  T0000002e  20186a01             bcs     bad_test        # Carry    (bit 0)
+    81  T00000032  40186601             bhi     bad_test        # Low      (bit 2)
+    82  T00000036  80186201             bfs     bad_test        # Flag     (bit 5)
+    83  T0000003a  00185e01             beq     bad_test        # Zero     (bit 6)
+    84  T0000003e  60185a01             bgt     bad_test        # Negative (bit 7)
+    85                          
+    86                          # Do not test the stack pointers.
+    87                          
+    88                          # R0 through R6 are scratch registers and may be modified.
+    89                          
+    90  T00000042  b05aaaaa             TEST_REG r0
+                   b052aaaa
+                   1510b05a
+                   5555b052
+                   5555    
+    91  T00000054  10184401             bne     bad_test
+    92                          
+    93  T00000058  b15aaaaa             TEST_REG r1
+                   b152aaaa
+                   1510b15a
+                   5555b152
+                   5555    
+    94  T0000006a  10182e01             bne     bad_test
+    95                          
+    96  T0000006e  b25aaaaa             TEST_REG r2
+                   b252aaaa
+                   1510b25a
+                   5555b252
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 3
+
+
+                   5555    
+    97  T00000080  10181801             bne     bad_test
+    98                          
+    99  T00000084  b35aaaaa             TEST_REG r3
+                   b352aaaa
+                   1510b35a
+                   5555b352
+                   5555    
+   100  T00000096  10180201             bne     bad_test
+   101                          
+   102  T0000009a  b45aaaaa             TEST_REG r4
+                   b452aaaa
+                   1510b45a
+                   5555b452
+                   5555    
+   103  T000000ac  1617                 bne     bad_test
+   104                          
+   105  T000000ae  b55aaaaa             TEST_REG r5
+                   b552aaaa
+                   1510b55a
+                   5555b552
+                   5555    
+   106  T000000c0  1c16                 bne     bad_test
+   107                          
+   108  T000000c2  b65aaaaa             TEST_REG r6
+                   b652aaaa
+                   1510b65a
+                   5555b652
+                   5555    
+   109  T000000d4  1216                 bne     bad_test
+   110                          
+   111                          # R7 through R13 must be saved.
+   112                          
+   113  T000000d6  705b                 movw    r7,r0
+   114  T000000d8  b75aaaaa             TEST_REG r7
+                   b752aaaa
+                   1510b75a
+                   5555b752
+                   5555    
+   115  T000000ea  075b                 movw    r0,r7
+   116  T000000ec  1615                 bne     bad_test
+   117                          
+   118  T000000ee  805b                 movw    r8,r0
+   119  T000000f0  b85aaaaa             TEST_REG r8
+                   b852aaaa
+                   1510b85a
+                   5555b852
+                   5555    
+   120  T00000102  085b                 movw    r0,r8
+   121  T00000104  1a14                 bne     bad_test
+   122                          
+   123  T00000106  905b                 movw    r9,r0
+   124  T00000108  b95aaaaa             TEST_REG r9
+                   b952aaaa
+                   1510b95a
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 4
+
+
+                   5555b952
+                   5555    
+   125  T0000011a  095b                 movw    r0,r9
+   126  T0000011c  1e13                 bne     bad_test
+   127                          
+   128  T0000011e  a05b                 movw    r10,r0
+   129  T00000120  ba5aaaaa             TEST_REG r10
+                   ba52aaaa
+                   1510ba5a
+                   5555ba52
+                   5555    
+   130  T00000132  0a5b                 movw    r0,r10
+   131  T00000134  1213                 bne     bad_test
+   132                          
+   133  T00000136  b05b                 movw    r11,r0
+   134  T00000138  bb5aaaaa             TEST_REG r11
+                   bb52aaaa
+                   1510bb5a
+                   5555bb52
+                   5555    
+   135  T0000014a  0b5b                 movw    r0,r11
+   136  T0000014c  1612                 bne     bad_test
+   137                          
+   138  T0000014e  c05b                 movw    r12,r0
+   139  T00000150  bc5aaaaa             TEST_REG r12
+                   bc52aaaa
+                   1510bc5a
+                   5555bc52
+                   5555    
+   140  T00000162  0c5b                 movw    r0,r12
+   141  T00000164  1a11                 bne     bad_test
+   142                          
+   143  T00000166  d05b                 movw    r13,r0
+   144  T00000168  bd5aaaaa             TEST_REG r13
+                   bd52aaaa
+                   1510bd5a
+                   5555bd52
+                   5555    
+   145  T0000017a  0d5b                 movw    r0,r13
+   146  T0000017c  1e10                 bne     bad_test
+   147                          
+   148  T0000017e  7c000000             movd    $_RAM_TEST_START,(r12)
+                   0000    
+   149  T00000184  7d000000             movd    $_RAM_TEST_END,(r13)
+                   0000    
+   150  T0000018a  00c01a00             bal     (ra),test_ram
+   151  T0000018e  0052                 cmpw    $0,r0
+   152  T00000190  1410                 bne     bad_test
+   153                          
+   154                                  # Tests passed.
+   155                          
+   156  T00000192  b05a5500             movw    $0x55,r0        # R0 holds return value.
+   157  T00000196  e210                 br      exit
+   158                          
+   159  T00000198               bad_test:                       # Test failed.
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 5
+
+
+   160  T00000198  005a                 movw    $0,r0           # R0 holds return value.
+   161                          
+   162  T0000019a  efa0         exit:   loadd   0:s(sp),(ra)
+   163  T0000019c  3f00ffff             subd    $0xfffffffc,(sp)
+                   fcff    
+   164  T000001a2  ee0a                 jump    (ra)              # Return to caller.
+   165                          
+   166                          # -----------------------------------------------------------------------------
+   167                          # Name: test_ram
+   168                          #
+   169                          # Do a non-destructive memory test of RAM locations.
+   170                          #
+   171                          # NOTE: Interrupts are disabled on entry so RAM will not be
+   172                          #       modified by any other code during the RAM tests.
+   173                          #       MAKE SURE NMI HANDLER (if NMI's are used for some purpose
+   174                          #       by a particular OEM) DOES NOT MODIFY RAM WITHIN THE RAM
+   175                          #       SPACE THAT IS BEING TESTED!  NMI's cannot be masked off
+   176                          #       so they could occur during the RAM memory tests.
+   177                          #
+   178                          # Input: R2 - Address of RAM start location.
+   179                          #        r3 - Address of RAM end location.
+   180                          #
+   181                          # Returns: 1 if bad RAM, 0 if OK.
+   182                          #
+   183                          # C prototype:
+   184                          #    FLAG test_ram(BYTE * start_pntr, BYTE * end_pntr)
+   185                          # -----------------------------------------------------------------------------
+   186  T000001a4               test_ram:
+   187  T000001a4  005a                 movw    $0:s,r0         # Clear error flag.
+   188                          
+   189  T000001a6  b65a5500             movw    $0x55:m,r6
+   190  T000001aa  b55aaa00             movw    $0xAA:m,r5
+   191  T000001ae  e011                 br      test
+   192                          
+   193  T000001b0  4cb0         loop:   loadb   0(r12),r4      # Save original data.
+   194                          
+   195  T000001b2  6cf0                 storb   r6,0(r12)
+   196  T000001b4  1cb0                 loadb   0(r12),r1
+   197  T000001b6  b1505500             cmpb    $0x55,r1
+   198  T000001ba  0210                 beq     ok1
+   199  T000001bc  105a                 movw    $1,r0           # Set error flag.
+   200                          
+   201  T000001be  5cf0         ok1:    storb   r5,0(r12)
+   202  T000001c0  1cb0                 loadb   0(r12),r1
+   203  T000001c2  b150aa00             cmpb    $0xAA,r1
+   204  T000001c6  0210                 beq     ok2
+   205  T000001c8  105a                 movw    $1,r0           # Set error flag.
+   206                          
+   207  T000001ca  4cf0         ok2:    storb   r4,0(r12)      # Restore original data.
+   208  T000001cc  1c32                 addw    $1:s,r12         # Bump start pointer.
+   209                          
+   210  T000001ce  cd57         test:   cmpd    (r12), (r13)
+   211  T000001d0  4310                 bhi     leave           # Exit if start pointer <= end pointer.
+   212  T000001d2  0052                 cmpw    $0,r0
+   213  T000001d4  0e1e                 beq     loop            # Loop if no error occurred.
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 6
+
+
+   214                          
+   215  T000001d6  ee0a         leave:  jump    (ra)
+   216                          

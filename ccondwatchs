@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<conditionwatchpoint name="bit/value watchpoint">
+<project key="projectName" value="ECFW_2011_UART"/>
+<Attribute key="condition" value="false"/>
+<watchpoints/>
+</conditionwatchpoint>

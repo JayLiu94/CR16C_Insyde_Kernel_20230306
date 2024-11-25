@@ -1,0 +1,111 @@
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 1
+
+
+
+##### File "chip\CRSISOPT.s" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE CRSISOPT.S
+     3                          #
+     4                          # Copyright(c) 1999-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          # Crisis module enabled option.  When the crisis module is used, the Keyboard 
+    13                          # Controller Header in the IREOPT.S file is used for the crisis module header 
+    14                          # (if the Boot ROM code that is masked into the microprocessor is used) and 
+    15                          # this file is used to define the Keyboard Controller Header for the main 
+    16                          # Keyboard Controller code.
+    17                          #
+    18                          # Revision History (Started August 10, 1999 by GLP)
+    19                          #
+    20                          # -----------------------------------------------------------------------------
+    21                             .include ..\oem\project\inc\swtchs.h
+
+##### File "chip\..\oem\project\inc\swtchs.h" #####
+
+     1                           
+     2                          #define CMD_BC 0 
+     3                          #define RAM_SCAN_TABLE 0 
+     4                          #define EXT_GPIO44_WAKEUP 0 
+     5                          #define EXT_GPIO1_WAKEUP 0 
+     6                          #define EXT_GPIO46_WAKEUP 0 
+     7                          #define EXT_GPIO3_WAKEUP 0 
+     8                          #define EXT_GPIO4_WAKEUP 0 
+     9                          #define EXT_GPIO5_WAKEUP 0 
+    10                          #define EXT_IRQ40_WAKEUP 0 
+    11                          #define AUX_PORT3_SUPPORTED 0 
+    12                          #define AUX_PORT2_SUPPORTED 0 
+    13                          #define SXI_SUPPORTED 1 
+    14                          #define MATRIX_18 0 
+    15                          #define I2C_SUPPORTED 1 
+    16                          #define SHL_SUPPORTED 1 
+    17                          #define HW_FLOATING_SUPPORTED 0 
+    18                          #define HID_OV_I2C_SUPPORTED 1 
+    19                          #define ACPI_SUPPORTED 1 
+    20                          #define CRISIS_CMD_HANDLER 0 
+    21                          #define BOOTABLE_CRISIS 1 
+    22                          #define CRISIS_CMD_0FH 1 
+    23                          #define KBD_BLOCK_PAGE 0 
+    24                          #define KBD_BLOCK_START 0x20100 
+    25                          #define INCLUDE_CRISIS 0 
+    26                          #define RUN_FROM_MRAM 0 
+    27                          #define EXT_HOTKEY 0 
+    28                          #define CHIP_ID 68Ax 
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 2
+
+
+    29                          #define SMB_FLUPDATE_SUPPORTED 0 
+    30                          #define I2C_SLAVE_SUPPORTED 1 
+    31                          #define KEY_SCANNER_SUPPORTED 0 
+    32                          #define EXTEND_CMD_SUPPORTED 
+    33                          #define EXTEND_PM1_SUPPORTED 1 
+    34                          #define EXTEND_PM2_SUPPORTED 1 
+    35                          #define MATRIX_SUPPORTED 1 
+    36                          #define MOUSE_EMULATION 0 
+    37                          #define KERNEL_TMRB_MFT16 0 
+    38                          #define I2C_GPIO_RECOVERY 1 
+    39                          #define ESPI_SUPPORTED 1 
+    40                          #define MESSAGES 0 
+    41                          #define HOST_IF_MSGS 0 
+    42                          #define PURMAIN_MSGS 0 
+    43                          #define AUX_PORT1_MSGS 0 
+    44                          #define AUX_PORT2_MSGS 0 
+    45                          #define AUX_PORT3_MSGS 0 
+    46                          #define KERNEL_TICKER_T0 1 
+    47                          #define RAM_BASED_FLASH_UPDATE 1 
+    48                          #define TICKER_1MS 1 
+    49                          #define DEEP_IDLE_S0 0 
+    50                          #define PWM_SUPPORTED 1 
+    51                          #define PORT80_SUPPORTED 0 
+    52                          #define PECI_SUPPORTED 0 
+    53                          #define ECDT_SHM_SUPPORTED 0 
+    54                          #define HW_KB_SCN_SUPPORTED 1 
+    55                          #define CR_UART_SUPPORTED 1 
+    56                          #/* 
+    57                          RUN_FROM_MRAM := 0 
+    58                          INCLUDE_CRISIS := 0 
+    59                          CRISIS_CMD_HANDLER := 0 
+    60                          #*/ 
+
+##### File "chip\CRSISOPT.s" #####
+
+    22                          
+    23                          	.text
+    24                          	.align	2
+    25                          
+    26                             .code_label start
+    27                          
+    28  T00000000  00000000        .double _ROM_SIZE
+    29  T00000004  00000000        .double start              # 2-byte pointer (code_label)
+    30                                                      # to start of code.
+    31  T00000008  00              .byte _CHECKSUM_DATA     # Byte to force checksum to 0.
+    32  T00000009  00              .byte 0                  # Reserved.

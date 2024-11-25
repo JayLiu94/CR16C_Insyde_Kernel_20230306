@@ -1,0 +1,276 @@
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 1
+
+
+
+##### File "chip\RESET.s" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE RESET.S
+     3                          #
+     4                          # Copyright(c) 1995-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          #
+    13                          # This file contains code used to perform initialization after a
+    14                          # reset.  Based on PC87570 code version 2.00.07[2667-21]-n.  This
+    15                          # is for use with version 2.0 and up of the CR16 tools.
+    16                          #
+    17                          # Revision History (Started March 16, 2000 by GLP)
+    18                          #
+    19                          # -----------------------------------------------------------------------------
+    20                          
+    21                             .include	..\oem\project\inc\swtchs.h
+
+##### File "chip\..\oem\project\inc\swtchs.h" #####
+
+     1                           
+     2                          #define CMD_BC 0 
+     3                          #define RAM_SCAN_TABLE 0 
+     4                          #define EXT_GPIO44_WAKEUP 0 
+     5                          #define EXT_GPIO1_WAKEUP 0 
+     6                          #define EXT_GPIO46_WAKEUP 0 
+     7                          #define EXT_GPIO3_WAKEUP 0 
+     8                          #define EXT_GPIO4_WAKEUP 0 
+     9                          #define EXT_GPIO5_WAKEUP 0 
+    10                          #define EXT_IRQ40_WAKEUP 0 
+    11                          #define AUX_PORT3_SUPPORTED 0 
+    12                          #define AUX_PORT2_SUPPORTED 0 
+    13                          #define SXI_SUPPORTED 1 
+    14                          #define MATRIX_18 0 
+    15                          #define I2C_SUPPORTED 1 
+    16                          #define SHL_SUPPORTED 1 
+    17                          #define HW_FLOATING_SUPPORTED 0 
+    18                          #define HID_OV_I2C_SUPPORTED 1 
+    19                          #define ACPI_SUPPORTED 1 
+    20                          #define CRISIS_CMD_HANDLER 0 
+    21                          #define BOOTABLE_CRISIS 1 
+    22                          #define CRISIS_CMD_0FH 1 
+    23                          #define KBD_BLOCK_PAGE 0 
+    24                          #define KBD_BLOCK_START 0x20100 
+    25                          #define INCLUDE_CRISIS 0 
+    26                          #define RUN_FROM_MRAM 0 
+    27                          #define EXT_HOTKEY 0 
+    28                          #define CHIP_ID 68Ax 
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 2
+
+
+    29                          #define SMB_FLUPDATE_SUPPORTED 0 
+    30                          #define I2C_SLAVE_SUPPORTED 1 
+    31                          #define KEY_SCANNER_SUPPORTED 0 
+    32                          #define EXTEND_CMD_SUPPORTED 
+    33                          #define EXTEND_PM1_SUPPORTED 1 
+    34                          #define EXTEND_PM2_SUPPORTED 1 
+    35                          #define MATRIX_SUPPORTED 1 
+    36                          #define MOUSE_EMULATION 0 
+    37                          #define KERNEL_TMRB_MFT16 0 
+    38                          #define I2C_GPIO_RECOVERY 1 
+    39                          #define ESPI_SUPPORTED 1 
+    40                          #define MESSAGES 0 
+    41                          #define HOST_IF_MSGS 0 
+    42                          #define PURMAIN_MSGS 0 
+    43                          #define AUX_PORT1_MSGS 0 
+    44                          #define AUX_PORT2_MSGS 0 
+    45                          #define AUX_PORT3_MSGS 0 
+    46                          #define KERNEL_TICKER_T0 1 
+    47                          #define RAM_BASED_FLASH_UPDATE 1 
+    48                          #define TICKER_1MS 1 
+    49                          #define DEEP_IDLE_S0 0 
+    50                          #define PWM_SUPPORTED 1 
+    51                          #define PORT80_SUPPORTED 0 
+    52                          #define PECI_SUPPORTED 0 
+    53                          #define ECDT_SHM_SUPPORTED 0 
+    54                          #define HW_KB_SCN_SUPPORTED 1 
+    55                          #define CR_UART_SUPPORTED 1 
+    56                          #/* 
+    57                          RUN_FROM_MRAM := 0 
+    58                          INCLUDE_CRISIS := 0 
+    59                          CRISIS_CMD_HANDLER := 0 
+    60                          #*/ 
+
+##### File "chip\RESET.s" #####
+
+    22                             .include	..\oem\project\inc\copyr.h
+
+##### File "chip\..\oem\project\inc\copyr.h" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE COPYR.H
+     3                          #
+     4                          # Copyright(c) 1996-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          #
+    13                          # This file contains the macro for the copyright notice.
+    14                          #
+    15                          # -----------------------------------------------------------------------------
+    16                          
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 3
+
+
+    17                          	.macro INLINE_COPYRIGHT
+    17                          	.byte	"Copyright 1996-2010, all rights reserved"
+    17                          	.byte	10,13
+    17                          	.byte	"Insyde Software Corp."
+    17                          	.endm
+
+##### File "chip\RESET.s" #####
+
+    23                          
+    24                             .text
+    25                             .align	2
+    26                          
+    27                             # Control is passed here from a CPU reset (location 0).
+    28                          
+    29                             .globl	start
+    30                             .code_label	start
+    31                             .code_label	skip_jbb
+    32  T00000000               start:
+    33  T00000000  e510            br           skip_jbb
+    34                          
+    35                             .globl       jbb_entry_point
+    36                             .code_label  jbb_entry_point
+    37  T00000002               jbb_entry_point:
+    38  T00000002  b15a55aa        movw         $0xAA55, r1
+    39  T00000006  11c9be7f        storw        r1, 0x17FBE
+    40                          
+    41                          
+    42                          # Notes on the Non-Maskable Interrupt (NMI):
+    43                          #
+    44                          # After reset, NMI is disabled and must remain disabled until the
+    45                          # software initializes the interrupt table, interrupt base and the
+    46                          # interrupt mode.  The ICU processes the PFAIL pin to send to the
+    47                          # CR16B NMI input.
+    48                          #
+    49                          # The external PFAIL interrupt is enabled by setting the ENLCK bit and
+    50                          # remains enabled until a reset occurs.  This allows the external NMI
+    51                          # feature to be enabled only after the Interrupt Base Register and the
+    52                          # interrupt stack pointer have been set up.
+    53                          #
+    54                          # Alternatively, the external PFAIL interrupt can be enabled by setting
+    55                          # the EN bit, which remains enabled until an interrupt event or a reset
+    56                          # occurs.  The NMISTAT register holds the status of the current pending
+    57                          # NMI request.  When the bit in NMISTAT is set to 1, an NMI request to
+    58                          # the core is issued.  NMISTAT is cleared each time its contents are
+    59                          # read.
+    60                          #
+    61                          # Because the Non-Maskable Interrupt is, actually, maskable at reset,
+    62                          # the setup of the INTBASE register and interrupt stack pointer can be
+    63                          # delayed.
+    64                          
+    65                             # On reset, the PSR (Processor Status Register) is cleared to
+    66                             # 0 except for PSR.E, which is set to 1.  Clear PSR.E (disable
+    67                             # interrupts).
+    68  T0000000a               skip_jbb:
+    69  T0000000a  0400            di
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 4
+
+
+    70                          
+    71                                  # Setup the program stack pointer and interrupt
+    72                                  # stack pointer.  The interrupt stack must reside
+    73                                  # at a different address than the program stack.
+    74                          
+    75  T0000000c  7f000000        movd	$__STACK_START, (sp)	# Initialize the
+                   0000    
+    76                                                                  # Stack Pointer register.
+    77                          
+    78  T00000012  70000000        movd	$__ISTACK_START, (r1,r0)	# Initialize the
+                   0000    
+    79  T00000018  1400c010        lprd	(r1,r0), isp			# Interrupt Stack Pointer register.
+    80                          
+    81                           #----------------------------------------------------------------------#
+    82                           # disable all interrupts by clearing PSR                               #
+    83                           #----------------------------------------------------------------------#
+    84                          
+    85  T0000001c  005a             movw    $0, r0
+    86  T0000001e  14009000         lpr     r0, psr
+    87                          
+    88                             # In order to debug the program, all the trap handlers must be
+    89                             # put into the dispatch table.  This is done by using the TMON
+    90                             # SVC trap with 0x101 as a parameter.  TMON will then copy all
+    91                             # the addresses of the trap handlers routines into the dispatch
+    92                             # table pointed to by the __dispatch_table constant variable.
+    93                             # When moving from the development phase to the product phase,
+    94                             # the line "excp svc" should be modified to "nop".
+    95                           #----------------------------------------------------------------------#
+    96                           # Set the Extended Dispatch bit in the CFG register (this is the       #
+    97                           # default configuration for CR16C) and enable instruction cache        #
+    98                           #----------------------------------------------------------------------#
+    99  T00000022  14008020        spr     cfg, r0	# copy cfg to r0
+   100  T00000026  b0260001        orw    $0x100, r0	# set ED, do not enable instruction cache when running from MRAM
+   101                          .if {RUN_FROM_MRAM}
+   103                          .else
+   104  T0000002a  b0261000        orw     $0x010, r0	# set ED, IC
+   105                          .endif
+   106  T0000002e  14008000        lpr     r0, cfg	#load r0 to cfg register
+   107                           #----------------------------------------------------------------------#
+   108                           # Initialize the intbase (pointer to the dispatch table).              #
+   109                           #----------------------------------------------------------------------#
+   110  T00000032  70000000        movd	$__dispatch_table, (r1,r0)
+                   0000    
+   111  T00000038  1400a010        lprd	(r1,r0), intbase
+   112                          
+   113                           #----------------------------------------------------------------------#
+   114                           # Add here code for incorrect checksum handling                        #
+   115                           #----------------------------------------------------------------------#
+   116                          
+   117                           #----------------------------------------------------------------------#
+   118                           # jump to the main function                                            #
+   119                           #----------------------------------------------------------------------#
+   120                          
+   121  T0000003c  1000ef0f        br	_OEM_Reset              # Allow the OEM to do
+                   c5ff    
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 5
+
+
+   122                                                          # some initialization.
+   123                          
+   124                          
+   125                          
+   126                             .globl	__eop
+   127                             .code_label	__eop
+   128  T00000042               __eop::
+   129  T00000042  e010                 br __eop
+   130                          
+   131                          
+   132  T00000044  436f7079        INLINE_COPYRIGHT
+                   72696768
+                   74203139
+                   39362d32
+                   3031302c
+                   20616c6c
+                   20726967
+                   68747320
+                   72657365
+                   72766564
+                   0a0d496e
+                   73796465
+                   20536f66
+                   74776172
+                   6520436f
+                   72702e  
+   133  T00000083  00              .align	2  # Align code to even address.
+   134                                         # This is done in case the copyright
+   135                                         # message causes the next address
+   136                                         # to be an odd address.
+   137                          

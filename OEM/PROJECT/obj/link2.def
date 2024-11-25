@@ -1,0 +1,22 @@
+/* Flash Update Code that is run from RAM (It also allocated space in flash) */
+.fwu_ram_flash :
+{
+__FWU_START = .; obj\fu_ram.o(.text) obj\fu_utils.o(.text) __FWU_END = .;
+} ??+GT top_ram AT ??+GT rom
+/* Flash Update data to top_ram */
+.fwu_common : { 
+obj\fu_init.o(.bss_4) obj\fu_init.o(.bss_2) obj\fu_init.o(.bss_1) 
+obj\fu_init.o(.bss) obj\fu_init.o(COMMON) 
+obj\fu_ram.o(.bss_4) obj\fu_ram.o(.bss_2) obj\fu_ram.o(.bss_1) 
+obj\fu_ram.o(.bss) obj\fu_ram.o(COMMON) 
+obj\fu_utils.o(.bss_4) obj\fu_utils.o(.bss_2) obj\fu_utils.o(.bss_1)
+obj\fu_utils.o(.bss) obj\fu_utils.o(COMMON) 
+obj\shm.o(.bss_4) obj\shm.o(.bss_2) obj\shm.o(.bss_1) 
+obj\shm.o(.bss) obj\shm.o(COMMON) 
+} ??+GTtop_ram
+.text : { *(.text) }??+GTrom
+.init ALIGN(2) : {}??+GTrom
+.data :
+{ *(.data) *(.data_4) *(.data_2) *(.data_1)} ??+GTram AT ??+GTrom
+.end :
+{ *(.rdata) *(.rdata_4) *(.rdata_2) *(.rdata_1) 

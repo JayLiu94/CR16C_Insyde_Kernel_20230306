@@ -1,0 +1,150 @@
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 1
+
+
+
+##### File "chip\CRSISRST.s" #####
+
+     1                          # -----------------------------------------------------------------------------
+     2                          # MODULE CRSISRST.S
+     3                          #
+     4                          # Copyright(c) 1999-2010, Insyde Software Corporation. All Rights Reserved.
+     5                          #
+     6                          # You may not reproduce, distribute, publish, display, perform, modify, adapt,
+     7                          # transmit, broadcast, present, recite, release, license or otherwise exploit
+     8                          # any part of this publication in any form, by any means, without the prior
+     9                          # written permission of Insyde Software Corporation.
+    10                          #
+    11                          # -----------------------------------------------------------------------------
+    12                          #
+    13                          # This file contains code used to perform initialization after a reset for the
+    14                          # crisis module.
+    15                          #
+    16                          # Revision History (Started August 6, 1999 by GLP)
+    17                          #
+    18                          # GLP
+    19                          # 08/17/99  Added vector table with pointer to
+    20                          #     Do_Crisis_Recovery.
+    21                          # 09/02/99  Added conditional assembly to allow code to be
+    22                          #     removed when CRISIS_CMD_HANDLER is FALSE.
+    23                          # -----------------------------------------------------------------------------
+    24                          
+    25                             .include ..\oem\project\inc\swtchs.h
+
+##### File "chip\..\oem\project\inc\swtchs.h" #####
+
+     1                           
+     2                          #define CMD_BC 0 
+     3                          #define RAM_SCAN_TABLE 0 
+     4                          #define EXT_GPIO44_WAKEUP 0 
+     5                          #define EXT_GPIO1_WAKEUP 0 
+     6                          #define EXT_GPIO46_WAKEUP 0 
+     7                          #define EXT_GPIO3_WAKEUP 0 
+     8                          #define EXT_GPIO4_WAKEUP 0 
+     9                          #define EXT_GPIO5_WAKEUP 0 
+    10                          #define EXT_IRQ40_WAKEUP 0 
+    11                          #define AUX_PORT3_SUPPORTED 0 
+    12                          #define AUX_PORT2_SUPPORTED 0 
+    13                          #define SXI_SUPPORTED 1 
+    14                          #define MATRIX_18 0 
+    15                          #define I2C_SUPPORTED 1 
+    16                          #define SHL_SUPPORTED 1 
+    17                          #define HW_FLOATING_SUPPORTED 0 
+    18                          #define HID_OV_I2C_SUPPORTED 1 
+    19                          #define ACPI_SUPPORTED 1 
+    20                          #define CRISIS_CMD_HANDLER 0 
+    21                          #define BOOTABLE_CRISIS 1 
+    22                          #define CRISIS_CMD_0FH 1 
+    23                          #define KBD_BLOCK_PAGE 0 
+    24                          #define KBD_BLOCK_START 0x20100 
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 2
+
+
+    25                          #define INCLUDE_CRISIS 0 
+    26                          #define RUN_FROM_MRAM 0 
+    27                          #define EXT_HOTKEY 0 
+    28                          #define CHIP_ID 68Ax 
+    29                          #define SMB_FLUPDATE_SUPPORTED 0 
+    30                          #define I2C_SLAVE_SUPPORTED 1 
+    31                          #define KEY_SCANNER_SUPPORTED 0 
+    32                          #define EXTEND_CMD_SUPPORTED 
+    33                          #define EXTEND_PM1_SUPPORTED 1 
+    34                          #define EXTEND_PM2_SUPPORTED 1 
+    35                          #define MATRIX_SUPPORTED 1 
+    36                          #define MOUSE_EMULATION 0 
+    37                          #define KERNEL_TMRB_MFT16 0 
+    38                          #define I2C_GPIO_RECOVERY 1 
+    39                          #define ESPI_SUPPORTED 1 
+    40                          #define MESSAGES 0 
+    41                          #define HOST_IF_MSGS 0 
+    42                          #define PURMAIN_MSGS 0 
+    43                          #define AUX_PORT1_MSGS 0 
+    44                          #define AUX_PORT2_MSGS 0 
+    45                          #define AUX_PORT3_MSGS 0 
+    46                          #define KERNEL_TICKER_T0 1 
+    47                          #define RAM_BASED_FLASH_UPDATE 1 
+    48                          #define TICKER_1MS 1 
+    49                          #define DEEP_IDLE_S0 0 
+    50                          #define PWM_SUPPORTED 1 
+    51                          #define PORT80_SUPPORTED 0 
+    52                          #define PECI_SUPPORTED 0 
+    53                          #define ECDT_SHM_SUPPORTED 0 
+    54                          #define HW_KB_SCN_SUPPORTED 1 
+    55                          #define CR_UART_SUPPORTED 1 
+    56                          #/* 
+    57                          RUN_FROM_MRAM := 0 
+    58                          INCLUDE_CRISIS := 0 
+    59                          CRISIS_CMD_HANDLER := 0 
+    60                          #*/ 
+
+##### File "chip\CRSISRST.s" #####
+
+    26                          
+    27                             .text
+    28                             .align   2
+    29                          
+    30                             # Control is passed here from a CPU reset (location 0).
+    31                          
+    32                             .globl   start
+    33  T00000000               start:
+    34                                  .if {CRISIS_CMD_HANDLER}
+    45                                  .endif
+    46                          
+    47                                  # The non-maskable interrupt may be recognized
+    48                                  # at any time.  Setup the INTBASE register
+    49                                  # and stack pointers as soon as possible.
+    50                          
+    51                                  # Initialize the INTBASE register to
+
+
+CompactRISC Assembler (CR16C) Version 4.1 (revision 1) 11/15/2024	  Page: 3
+
+
+    52                                  # point to the interrupt dispatch table.
+    53  T00000000  70000000        movd  $__dispatch_table,(r1,r0)
+                   0000    
+    54  T00000006  1400a010        lprd   (r1,r0),intbase
+    55                          
+    56                                  # Setup the program stack pointer and interrupt
+    57                                  # stack pointer.  The interrupt stack must reside
+    58                                  # at a different address than the program stack.
+    59                          
+    60  T0000000a  7f000000        movd  $__STACK_START, (sp) # Initialize the
+                   0000    
+    61                                                                  # Stack Pointer register.
+    62                          
+    63  T00000010  70000000        movd  $__ISTACK_START,(r1,r0)   # Initialize the
+                   0000    
+    64  T00000016  1400c010        lprd  (r1,r0),isp         # Interrupt Stack Pointer register.
+    65                          
+    66                                  # Initialize the Processor Status Register (PSR).
+    67                                  # Ensure that the interrupt enable bits are off.
+    68  T0000001a  005a            movw  $0,r0
+    69  T0000001c  14009000        lpr   r0,psr
+    70                          
+    71  T00000020  1000ef0f        br _OEM_Crisis_Reset # Allow the OEM to do
+                   e1ff    
+    72                                                  # some initialization.

@@ -1,0 +1,1069 @@
+<Root>
+  <REG_HEADER>
+    <Title type="String">BF283F24-70B9-4f97-86E6-0AD5BAAE9E01</Title>
+    <VersionHigh type="String">0</VersionHigh>
+    <VersionLow type="String">1</VersionLow>
+  </REG_HEADER>
+  <REG_ROOT>
+    <RegVer type="Integer">133</RegVer>
+    <Project>
+      <CompilerType type="Integer">0</CompilerType>
+      <GlobalOptions>
+        <AHeaderExtension type="String">INC</AHeaderExtension>
+        <AInpExtensions type="String">ASM</AInpExtensions>
+        <AOutExtensions type="String">OBJ</AOutExtensions>
+        <AsmAdditionalOutExt type="String"></AsmAdditionalOutExt>
+        <AssemblerRelPath type="String"></AssemblerRelPath>
+        <BeepWhenDone type="Integer">1</BeepWhenDone>
+        <ChangeWorkingDirectory type="Integer">1</ChangeWorkingDirectory>
+        <CInpExtensions type="String">C;CPP</CInpExtensions>
+        <CmpAdditionalOutExt type="String"></CmpAdditionalOutExt>
+        <CompCmdLinePostfix type="String"></CompCmdLinePostfix>
+        <CompCmdLinePrefix type="String"></CompCmdLinePrefix>
+        <CompilerDirectory type="String"></CompilerDirectory>
+        <CompilerRelPath type="String"></CompilerRelPath>
+        <CopyOutputFilesToTargetDir type="Integer">1</CopyOutputFilesToTargetDir>
+        <COutExtensions type="String">OBJ</COutExtensions>
+        <DeleteTemporalyFiles type="Integer">0</DeleteTemporalyFiles>
+        <DF_AllowBlanks type="String">True</DF_AllowBlanks>
+        <DF_End type="String"></DF_End>
+        <DF_Keyword type="String"></DF_Keyword>
+        <DF_ReqBlanks type="String">True</DF_ReqBlanks>
+        <DF_Start type="String"></DF_Start>
+        <DF_Valid type="String">False</DF_Valid>
+        <DisplayParameters type="Integer">0</DisplayParameters>
+        <EnvironmentSettings type="StringArray">AAAA</EnvironmentSettings>
+        <ExecutableFileName type="String">WPC.ROM</ExecutableFileName>
+        <ExternalMake type="Integer">0</ExternalMake>
+        <ExternalMakeFile type="String"></ExternalMakeFile>
+        <ExternalMakeFileParameters type="String"></ExternalMakeFileParameters>
+        <HeaderExtension type="String">H</HeaderExtension>
+        <IncludePaths type="StringArray">AA</IncludePaths>
+        <IncludeSearchSubDirs type="Buffer"></IncludeSearchSubDirs>
+        <LinkerRelPath type="String"></LinkerRelPath>
+        <LInpExtensions type="String">OBJ;LIB</LInpExtensions>
+        <LnkAdditionalOutExt type="String"></LnkAdditionalOutExt>
+        <PathSeparator type="String">\</PathSeparator>
+        <RootDir type="String"></RootDir>
+        <RunAfterAsm type="String"></RunAfterAsm>
+        <RunAfterAsmParam type="String"></RunAfterAsmParam>
+        <RunAfterComp type="String"></RunAfterComp>
+        <RunAfterCompParam type="String"></RunAfterCompParam>
+        <RunAfterLinker type="String"></RunAfterLinker>
+        <RunAfterLinkerParam type="String"></RunAfterLinkerParam>
+        <RunBeforeBuild type="String"></RunBeforeBuild>
+        <RunBeforeBuildParam type="String"></RunBeforeBuildParam>
+        <RunBeforeMake type="String"></RunBeforeMake>
+        <RunBeforeMakeParam type="String"></RunBeforeMakeParam>
+        <RunWithRelativePath type="Integer">0</RunWithRelativePath>
+        <ShowToolWindow type="Integer">0</ShowToolWindow>
+        <mbBuild>
+          <Mode type="Integer">1</Mode>
+          <Options type="String"></Options>
+          <Path type="String">$(IRFDIR)REBUILD.BAT</Path>
+        </mbBuild>
+        <mbMake>
+          <Mode type="Integer">1</Mode>
+          <Options type="String"></Options>
+          <Path type="String">$(IRFDIR)BUILD.BAT</Path>
+        </mbMake>
+      </GlobalOptions>
+      <Project.0>
+        <DefaultTargetName type="String">ECFW - Debug</DefaultTargetName>
+        <FilterName type="String">GCC</FilterName>
+        <ProjectName type="String"></ProjectName>
+        <AdvancedLinkerOptions>
+          <AsmCustomFilterName type="String"></AsmCustomFilterName>
+          <AsmUseDefaultName type="String">True</AsmUseDefaultName>
+          <CmpCustomFilterName type="String"></CmpCustomFilterName>
+          <CmpUseDefaultName type="String">True</CmpUseDefaultName>
+          <ExternalFilterPath type="String"></ExternalFilterPath>
+          <LinkCustomFilterName type="String"></LinkCustomFilterName>
+          <LinkUseDefaultName type="String">True</LinkUseDefaultName>
+          <UseExternalFilter type="String">False</UseExternalFilter>
+        </AdvancedLinkerOptions>
+        <Target.0>
+          <IsChanged type="String">True</IsChanged>
+          <TargetName type="String">ECFW - Debug</TargetName>
+          <FileOptios>
+            <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+            <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+            <CompilerDefines type="String"></CompilerDefines>
+            <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+            <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+            <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+            <ExcludeFromMake type="String">No</ExcludeFromMake>
+            <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+            <RunAssembler type="String">No</RunAssembler>
+            <RunAssemblerWR type="String">False</RunAssemblerWR>
+          </FileOptios>
+          <LinkGroup.0>
+            <LinkGroupName type="String">CORE</LinkGroupName>
+            <File.0>
+              <FileName type="String">$(IRFDIR)CORE\PURXLT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.0>
+            <File.1>
+              <FileName type="String">$(IRFDIR)CORE\PURACPI.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.1>
+            <File.10>
+              <FileName type="String">$(IRFDIR)CORE\PURMAIN.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.10>
+            <File.11>
+              <FileName type="String">$(IRFDIR)CORE\PURSCN.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.11>
+            <File.12>
+              <FileName type="String">$(IRFDIR)CORE\PURSMB.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.12>
+            <File.2>
+              <FileName type="String">$(IRFDIR)CORE\PURALARM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.2>
+            <File.3>
+              <FileName type="String">$(IRFDIR)CORE\PURCMD.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.3>
+            <File.4>
+              <FileName type="String">$(IRFDIR)CORE\PURCRSIS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.4>
+            <File.5>
+              <FileName type="String">$(IRFDIR)CORE\PURDAT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.5>
+            <File.6>
+              <FileName type="String">$(IRFDIR)CORE\PURDEV.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.6>
+            <File.7>
+              <FileName type="String">$(IRFDIR)CORE\PUREXT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.7>
+            <File.8>
+              <FileName type="String">$(IRFDIR)CORE\PURFUNCT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.8>
+            <File.9>
+              <FileName type="String">$(IRFDIR)CORE\PURINI.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.9>
+          </LinkGroup.0>
+          <LinkGroup.1>
+            <LinkGroupName type="String">OEM</LinkGroupName>
+            <File.0>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\STATICFG.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.0>
+            <File.1>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\CRSISICU.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.1>
+            <File.10>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMDAT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.10>
+            <File.11>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMINI.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.11>
+            <File.12>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMMAIN.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.12>
+            <File.13>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMPECI.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.13>
+            <File.14>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\PWRSEQ.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.14>
+            <File.15>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\RAMINIT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.15>
+            <File.16>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\REGINIT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.16>
+            <File.17>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\SCANTABS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.17>
+            <File.18>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\SMB_EMUL.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.18>
+            <File.19>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\SMB_OEM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.19>
+            <File.2>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\ecdthif.c</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.2>
+            <File.20>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\SMB_TRAN.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.20>
+            <File.3>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\EVENTS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.3>
+            <File.4>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\HCONFIG.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.4>
+            <File.5>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\HOOK.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.5>
+            <File.6>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\ICU.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.6>
+            <File.7>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.7>
+            <File.8>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMCEIR.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.8>
+            <File.9>
+              <FileName type="String">$(IRFDIR)OEM\PROJECT\OEMCRSIS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.9>
+          </LinkGroup.1>
+          <LinkGroup.2>
+            <LinkGroupName type="String">CHIP</LinkGroupName>
+            <File.0>
+              <FileName type="String">$(IRFDIR)CHIP\TIMERS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.0>
+            <File.1>
+              <FileName type="String">$(IRFDIR)CHIP\A_TO_D.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.1>
+            <File.10>
+              <FileName type="String">$(IRFDIR)CHIP\HEADER.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.10>
+            <File.11>
+              <FileName type="String">$(IRFDIR)CHIP\HID_I2C.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.11>
+            <File.12>
+              <FileName type="String">$(IRFDIR)CHIP\HOST_IF.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.12>
+            <File.13>
+              <FileName type="String">$(IRFDIR)CHIP\I2C.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.13>
+            <File.14>
+              <FileName type="String">$(IRFDIR)CHIP\IRQ.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.14>
+            <File.15>
+              <FileName type="String">$(IRFDIR)CHIP\LPC_I2C.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.15>
+            <File.16>
+              <FileName type="String">$(IRFDIR)CHIP\PECI.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.16>
+            <File.17>
+              <FileName type="String">$(IRFDIR)CHIP\PORT80.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.17>
+            <File.18>
+              <FileName type="String">$(IRFDIR)CHIP\PROC.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.18>
+            <File.19>
+              <FileName type="String">$(IRFDIR)CHIP\PS2.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.19>
+            <File.2>
+              <FileName type="String">$(IRFDIR)CHIP\CRISIS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.2>
+            <File.20>
+              <FileName type="String">$(IRFDIR)CHIP\PWM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.20>
+            <File.21>
+              <FileName type="String">$(IRFDIR)CHIP\SCAN.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.21>
+            <File.22>
+              <FileName type="String">$(IRFDIR)CHIP\SHM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.22>
+            <File.23>
+              <FileName type="String">$(IRFDIR)CHIP\SIB.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.23>
+            <File.3>
+              <FileName type="String">$(IRFDIR)CHIP\D_TO_A.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.3>
+            <File.4>
+              <FileName type="String">$(IRFDIR)CHIP\DEBUG.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.4>
+            <File.5>
+              <FileName type="String">$(IRFDIR)CHIP\DEV.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.5>
+            <File.6>
+              <FileName type="String">$(IRFDIR)CHIP\FU_HNDL.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.6>
+            <File.7>
+              <FileName type="String">$(IRFDIR)CHIP\FU_INIT.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.7>
+            <File.8>
+              <FileName type="String">$(IRFDIR)CHIP\FU_RAM.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.8>
+            <File.9>
+              <FileName type="String">$(IRFDIR)CHIP\FU_UTILS.C</FileName>
+              <IsChanged type="String">False</IsChanged>
+              <FileOptios>
+                <AssemblerOptions type="String">$(EDNAME)</AssemblerOptions>
+                <AssemblerOptionsWR type="String">False</AssemblerOptionsWR>
+                <CompilerDefines type="String"></CompilerDefines>
+                <CompilerDefinesWR type="String">False</CompilerDefinesWR>
+                <CompilerOptions type="String">$(EDNAME)</CompilerOptions>
+                <CompilerOptionsWR type="String">False</CompilerOptionsWR>
+                <ExcludeFromMake type="String">No</ExcludeFromMake>
+                <ExcludeFromMakeWR type="String">No</ExcludeFromMakeWR>
+                <RunAssembler type="String">No</RunAssembler>
+                <RunAssemblerWR type="String">False</RunAssemblerWR>
+              </FileOptios>
+            </File.9>
+          </LinkGroup.2>
+          <TargetOptios>
+            <BuildOptions type="String"></BuildOptions>
+            <CRLF type="String">No</CRLF>
+            <IndFileLocation type="Integer">0</IndFileLocation>
+            <IndirectionFile type="String"></IndirectionFile>
+            <LinkerOptions type="String"></LinkerOptions>
+            <MakeOptions type="String"></MakeOptions>
+            <RunAfterLinkParam type="String"></RunAfterLinkParam>
+            <SkipObjectCheck type="String">No</SkipObjectCheck>
+            <TargetDirectory type="String">OEM\PROJECT\OBJ</TargetDirectory>
+            <TargetDirectory2 type="String"></TargetDirectory2>
+            <TranslateCharacter type="Integer">38</TranslateCharacter>
+            <UseTargetDirectory2 type="String">No</UseTargetDirectory2>
+          </TargetOptios>
+        </Target.0>
+        <TargetOptions>
+          <BuildOptions type="String"></BuildOptions>
+          <CRLF type="String">No</CRLF>
+          <IndFileLocation type="Integer">0</IndFileLocation>
+          <IndirectionFile type="String"></IndirectionFile>
+          <LinkerOptions type="String"></LinkerOptions>
+          <MakeOptions type="String"></MakeOptions>
+          <RunAfterLinkParam type="String"></RunAfterLinkParam>
+          <SkipObjectCheck type="String">No</SkipObjectCheck>
+          <TargetDirectory type="String"></TargetDirectory>
+          <TargetDirectory2 type="String"></TargetDirectory2>
+          <TranslateCharacter type="Integer">38</TranslateCharacter>
+          <UseTargetDirectory2 type="String">No</UseTargetDirectory2>
+        </TargetOptions>
+      </Project.0>
+    </Project>
+  </REG_ROOT>
+</Root>

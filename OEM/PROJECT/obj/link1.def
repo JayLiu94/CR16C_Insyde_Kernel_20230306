@@ -1,0 +1,1 @@
+rom(rx) : ORIGIN = 0x20100, LENGTH = 0x1FF00

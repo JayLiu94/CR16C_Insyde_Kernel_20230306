@@ -1,0 +1,36 @@
+Configuring  Winbond 25Q64_QPI(*) 8 Mbyte, external mon
+itor OK
+Loading...
+File: D:\PROJECT\KERNEL\ECFW12A\ECFW_2011_U
+RAT\OEM\PROJECT\OBJ\NPCE285x.ROM
+Loaded: C3D2h
+Erasing OK
+Configuring Sector 0 (20000)  OK
+Programming OK
+Configuring Sector 1000 (21000)  OK
+Programming OK
+Configuring Sector 2000 (22000)  OK
+Programming OK
+Configuring Sector 3000 (23000)  OK
+Programming OK
+Configuring Sector 4000 (24000)  OK
+Programming OK
+Configuring Sector 5000 (25000)  OK
+Programming OK
+Configuring Sector 6000 (26000)  OK
+Programming OK
+Configuring Sector 7000 (27000)  OK
+Programming OK
+Configuring Sector 8000 (28000)  OK
+Programming OK
+Configuring Sector 9000 (29000)  OK
+Programming OK
+Configuring Sector A000 (2A000)  OK
+Programming OK
+Configuring Sector B000 (2B000)  OK
+Programming OK
+Configuring Sector C000 (2C000)  OK
+Programming OK
+Programmed: BEA8h  of BEA8h
+Final Verify skipped due to on-the-fly verification...
+Operation completed
