@@ -184,7 +184,7 @@ void Service_OEM_1000mS(void)
     status=Read_Port_Pin(0x00);
     if(status) //GPIO00
     {
-        SMB_wrWORD(SMB1, SLAVE_ADDR(0x15), T2B_CMD_KBD_LIGHT_ACTIVITY, 0x00, 0 );
+        SMB_wrWORD(SMB1, SLAVE_ADDR(0x15), T2B_CMD_KBD_LIGHT_ACTIVITY, 0x10, 0 );  /*Currently set 0x10 as timeout value to slave device */
     }
     
 
